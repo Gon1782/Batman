@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "../redux/components/Header/Header";
 import Footer from "../redux/components/Footer/Footer";
+import Detail from "../pages/Detail";
 import "./router.css";
 
 const Router = () => {
@@ -19,6 +20,7 @@ const Router = () => {
                 </>
               }
             />
+            <Route path="/detail" element={<Detail />} />
             <Route
               path="/community"
               element={
