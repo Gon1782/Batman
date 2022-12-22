@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "../redux/components/Header/Header";
 import Footer from "../redux/components/Footer/Footer";
 import "./router.css";
+import Community from "../pages/Community";
 
 const Router = () => {
   return (
@@ -11,22 +12,8 @@ const Router = () => {
         <div className="contentWrapper">
           <Header />
           <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <div>메인페이지</div>
-                </>
-              }
-            />
-            <Route
-              path="/community"
-              element={
-                <>
-                  <div>커뮤니티</div>
-                </>
-              }
-            />
+            <Route path="/" element={<></>} />
+            <Route path="/123" element={<Community />} />
           </Routes>
         </div>
         <Footer />

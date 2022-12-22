@@ -2,19 +2,19 @@
   "posts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "대호",
+      "contents": "짱짱맨"
     },
   
   {
-    
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+       "id": 2,
+      "title": "상권",
+      "contents": "짱짱맨"
     },
   
-  {
-    "name": "typicode"
+  {   "id": 3,
+    "title": "민우",
+    "contents": "짱짱맨"
   }
 ]
 }
