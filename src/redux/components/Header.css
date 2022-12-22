@@ -1,0 +1,29 @@
+.header {
+  background-color: #b9babd;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.mainlogo {
+  width: 50px;
+  padding-left: 20px;
+}
+
+.commu {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+}
+
+.inputsize {
+  border-radius: 12px;
+  height: 30px;
+  text-align: center;
+}
+
+.formsize {
+  display: flex;
+  align-items: center;
+}
