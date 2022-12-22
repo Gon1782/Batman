@@ -5,6 +5,7 @@ import reportWebVitals from "./reportWebVitals";
 import store from "./redux/config/configStore";
 import { Provider } from "react-redux";
 import { QueryClient, QueryClientProvider } from "react-query";
+import "./styles/reset.css";
 
 const queryClient = new QueryClient();
 
