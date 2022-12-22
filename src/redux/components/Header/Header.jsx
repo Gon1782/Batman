@@ -10,7 +10,7 @@ function Header() {
         <img className="mainlogo" alt="img" src={process.env.PUBLIC_URL + "/batman.png"} />
       </Link>
       <form>
-        <input className="inputsize" type="search" value="검색기능"></input>
+        {/* <input className="inputsize" type="search" value="검색기능"></input> */}
       </form>
       <p
         className="navi"

@@ -3,6 +3,7 @@ body {
 }
 
 .detail_layout {
+<<<<<<< HEAD
   display: grid;
   grid-template-rows: 1fr 1fr 2fr;
   justify-items: center;
@@ -11,3 +12,12 @@ body {
   height: 90%;
   margin: auto;
 }
+=======
+    display: grid;
+    justify-items: center;
+    width: 100vw;
+    max-width: 1280px;
+    height: 90%;
+    margin: auto;
+}
+>>>>>>> 166368a04cfefcbfe79ab4293838e9c10672c103
