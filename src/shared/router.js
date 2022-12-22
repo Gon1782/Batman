@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "../redux/components/Header/Header";
 import Footer from "../redux/components/Footer/Footer";
 import "./router.css";
-import Community from "../pages/Community";
+import Community from "../pages/Community/Community";
 
 const Router = () => {
   return (

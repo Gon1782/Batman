@@ -1,0 +1,43 @@
+.divCommunity {
+  background-color: #ffdcdc;
+  border-radius: 15px;
+  padding: 60px;
+  width: 60%;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.divTitle {
+  width: 80%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.divContents {
+  width: 90%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.wrap {
+  position: relative;
+}
+
+.community-Btn {
+  position: absolute;
+  right: 110px;
+  top: -40px;
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  background-color: #b4b4b4;
+}
+
+.community-Btn:hover {
+  border: 3px solid black;
+}
