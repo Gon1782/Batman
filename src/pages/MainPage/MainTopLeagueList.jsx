@@ -1,20 +1,38 @@
-import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 import './Main_page.css';
 
-const topLeagueLists = ['Premier League', 'LaLiga', 'Serie A'];
-
 export default function MainTopLeagueList() {
+  const topLeagueLists = ['Premier League', 'LaLiga', 'Serie A'];
+
+  const navigate = useNavigate();
+  // const [list, setList] = useState(['Premier League', 'LaLiga', 'Serie A']);
   return (
     <div className='list'>
-      <p>Top leagues</p>
-      <ul>
-        {topLeagueLists.map((value, index) => (
-          <li key={index}>
-            <button>{value}</button>
-          </li>
-        ))}
-      </ul>
+      <div className='Topleagues'>Top leagues</div>
+      <div
+        className='Epl'
+        onClick={() => {
+          navigate('/Epl');
+        }}
+      >
+        {topLeagueLists[0]}
+      </div>
+      <div
+        className='Laliga'
+        onClick={() => {
+          navigate('/Laliga');
+        }}
+      >
+        {topLeagueLists[1]}
+      </div>
+      <div
+        className='SerieA'
+        onClick={() => {
+          navigate('/SerieA');
+        }}
+      >
+        {topLeagueLists[2]}
+      </div>
     </div>
   );
 }

@@ -1,16 +1,8 @@
 import React from 'react';
-import MainLanking from './pages/MainPage/MainLanking';
-import MainLeagueInformation from './pages/MainPage/MainLeagueInformation';
-import MainTopLeagueList from './pages/MainPage/MainTopLeagueList';
+import Router from './shared/router';
 
 const App = () => {
-  return (
-    <div>
-      <MainTopLeagueList />
-      <MainLeagueInformation />
-      <MainLanking />
-    </div>
-  );
+  return <Router />;
 };
 
 export default App;
