@@ -7,10 +7,10 @@ function Header() {
       <Link style={{ textDecoration: "none", color: "black" }} to="/">
         <img className="mainlogo" src={process.env.PUBLIC_URL + "/batman.png"} />
       </Link>
-      <form className="formsize">
+      <form>
         <input className="inputsize" type="search" value="검색기능"></input>
       </form>
-      <Link className="commu" style={{ textDecoration: "none", color: "black" }} to="/community">
+      <Link style={{ textDecoration: "none", color: "black" }} to="/community">
         커뮤니티
       </Link>
     </div>

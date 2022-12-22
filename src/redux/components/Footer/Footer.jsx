@@ -4,10 +4,12 @@ function Footer() {
   return (
     <div className="footer">
       <div>
-        <p>상호명</p>
-        <p>회사위치 : 고담시</p>
+        상호명 : (주)batman
+        <br />
+        회사위치 : 고담시 <br />
+        대표 : 한상권
       </div>
-      <p>TEL.1336</p>
+      <h4>TEL.1336</h4>
     </div>
   );
 }
