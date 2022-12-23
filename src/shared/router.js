@@ -1,25 +1,28 @@
+//
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import MainTopLeagueList from '../pages/MainPage/MainTopLeagueList';
+import Header from '../redux/components/Header/Header';
+import Footer from '../redux/components/Footer/Footer';
+import './router.css';
 import Epl from '../pages/MainPage/LeagueInformation/Epl';
-import Laliga from '../pages/MainPage/LeagueInformation/Laliga';
-import SerieA from '../pages/MainPage/LeagueInformation/SerieA';
-import Mainpage from './Mainpage';
-
-// import Detail from '../pages/Detail';
+import LaLiga from '../pages/MainPage/LeagueInformation/Laliga';
+import MainpageRouter from '../pages/MainPage/MainpageRouter';
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <Mainpage>
-        <Routes>
-          <Route path='/' element={<MainTopLeagueList />} />
-          <Route path='Epl' element={<Epl />} />
-          <Route path='Laliga' element={<Laliga />} />
-          <Route path='SerieA' element={<SerieA />} />
-          {/* <Route path='/' element={<Detail />} /> */}
-        </Routes>
-      </Mainpage>
+      <div className='wrapper'>
+        <div className='contentWrapper'>
+          <Header />
+          <Routes>
+            <Route path='/' element={<MainpageRouter />} />
+            <Route path='/' element={<Epl />} />
+            <Route path='/Laliga' element={<LaLiga />} />
+            <Route path='/community' element={<></>} />
+          </Routes>
+        </div>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 };

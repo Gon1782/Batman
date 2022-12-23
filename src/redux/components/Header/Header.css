@@ -1,0 +1,19 @@
+.header {
+  background-color: #a3a29e;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.mainlogo {
+  width: 50px;
+}
+
+.inputsize {
+  border-radius: 12px;
+  height: 30px;
+  text-align: center;
+}
