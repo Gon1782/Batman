@@ -104,5 +104,25 @@
       "like": 0,
       "dislike": 0
     }
+  ],
+  "bets": [
+    {
+      "id": 1,
+      "homeAndAway": "Home",
+      "betMoney": 1800,
+      "isBet": false
+    },
+    {
+      "id": 2,
+      "homeAndAway": "Draw",
+      "betMoney": 600,
+      "isBet": false
+    },
+    {
+      "id": 3,
+      "homeAndAway": "Away",
+      "betMoney": 500,
+      "isBet": false
+    }
   ]
 }
