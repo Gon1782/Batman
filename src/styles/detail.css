@@ -1,10 +1,9 @@
 body {
-  background-color: #a0a0a0;
+  background-color: bisque;
 }
 
 .detail_layout {
   display: grid;
-  grid-template-rows: 1fr 1fr 2fr;
   justify-items: center;
   width: 100vw;
   max-width: 1280px;

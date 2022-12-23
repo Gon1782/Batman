@@ -1,5 +1,5 @@
 {
-  "posts": [
+  "comments": [
     {
       "id": 1,
       "title": "대호",
@@ -8,8 +8,11 @@
 
     {
       "id": 2,
-      "title": "상권",
-      "contents": "짱짱맨"
+      "writer": "작성자",
+      "comment": "가즈아!!!!!!!",
+      "date": "2022.12.22 22:22",
+      "like": 32,
+      "dislike": 26
     },
 
     { "id": 3, "title": "민우", "contents": "짱짱맨" }

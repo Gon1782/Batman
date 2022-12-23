@@ -1,0 +1,81 @@
+/* EPL 정보 */
+
+.information {
+  width: 59%;
+  margin-right: 5%;
+}
+
+.main_league_title {
+  text-align: center;
+  font-size: 3.4rem;
+
+  margin-bottom: 5%;
+}
+
+.main_league {
+  height: 6vw;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 8px 3px rgba(0, 0, 0, 0.12), 0 4px 14px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+
+  margin-top: 4%;
+}
+
+.main_league:hover {
+  transform: scale(1.03);
+}
+
+.epllist {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home,
+.away {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.9rem;
+  font-weight: 550;
+}
+
+.home img {
+  width: 70px;
+  height: 70px;
+
+  margin-left: 15px;
+}
+
+.away img {
+  width: 70px;
+  height: 70px;
+
+  margin-right: 15px;
+}
+
+.game_time {
+  color: rgb(133, 131, 131);
+
+  font-size: 1.3rem;
+  font-weight: 550;
+}
+/* 라리가 */
+.Laliga_page_body {
+  display: flex;
+  margin-top: 3%;
+  background-color: #c0c0c0;
+}
+/* 세리에 A*/
+.SerieA_page_body {
+  display: flex;
+  margin-top: 3%;
+  background-color: #c0c0c0;
+}
