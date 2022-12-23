@@ -24,10 +24,10 @@ function InputModal() {
       fetchTodos();
     }, []);
   };
-  console.log(posts);
+
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="secondary" onClick={handleShow}>
         글쓰기
       </Button>
 
@@ -46,7 +46,7 @@ function InputModal() {
             </FloatingLabel>
 
             {/* 글 올리기 버튼 */}
-            <Button type="submit" variant="info" className="my-3" style={{ width: "300px", margin: "auto", display: "block" }}>
+            <Button type="submit" variant="secondary" className="my-3" style={{ width: "300px", margin: "auto", display: "block" }}>
               올리기
             </Button>
           </Form>
