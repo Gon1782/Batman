@@ -1,38 +1,34 @@
-import { useNavigate } from 'react-router-dom';
 import './Main_page.css';
+import eplLogo from '../../../assets/img/EPL_logo.png';
+import Laliga from '../../../assets/img/Laliga.png';
+import SerieA from '../../../assets/img/SerieA.png';
+// import { useQuery } from 'react-query';
+// import axios from 'axios';
+
+// import { useState } from 'react';
 
 export default function MainTopLeagueList() {
-  const topLeagueLists = ['Premier League', 'LaLiga', 'Serie A'];
-
-  const navigate = useNavigate();
-  // const [list, setList] = useState(['Premier League', 'LaLiga', 'Serie A']);
+  const topLeaguesLists = ['Premier League', 'Laliga', 'Serie A'];
+  const handleEplClick = () => {};
   return (
     <div className='list'>
       <div>
         <div className='Topleagues'>Top leagues</div>
-        <div
-          className='Epl'
-          onClick={() => {
-            navigate('/');
-          }}
-        >
-          {topLeagueLists[0]}
-        </div>
-        <div
-          className='Laliga'
-          onClick={() => {
-            navigate('/Laliga');
-          }}
-        >
-          {topLeagueLists[1]}
-        </div>
-        <div
-          className='SerieA'
-          onClick={() => {
-            navigate('/SerieA');
-          }}
-        >
-          {topLeagueLists[2]}
+        <div>
+          <div className='Epl' onClick={handleEplClick}>
+            <img src={eplLogo} alt='' />
+            {topLeaguesLists[0]}
+          </div>
+          <div className='Laliga'>
+            {' '}
+            <img src={Laliga} alt='' />
+            {topLeaguesLists[1]}
+          </div>
+          <div className='SerieA'>
+            {' '}
+            <img src={SerieA} alt='' />
+            {topLeaguesLists[2]}
+          </div>
         </div>
       </div>
     </div>

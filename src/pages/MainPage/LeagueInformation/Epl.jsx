@@ -1,35 +1,33 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useQuery } from 'react-query';
 import './Epl.css';
 
 export default function Epl() {
-  const [info, setInfo] = useState([]);
-  useEffect(() => {
-    axios.get('http://localhost:3001/EPL').then((res) => setInfo(res.data));
-  }, []);
-  console.log(info);
+  const { isLoading, error, data } = useQuery(['information'], async () => await axios.get('http://localhost:3001/Epl').then((res) => res.data));
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <p>error</p>;
+
   return (
     <div className='information'>
-      <div className='title'>Premier League</div>
-      <Link to='/Laliga'>
-        <div className='league'>
-          <div>
-            {info.map((data) => (
-              <div className='epllist' key={data.id}>
-                <div className='home'>
-                  {data.home} <img src={data.homeimg} alt='img' />
-                </div>
-                <div>{data.time}</div>
-                <div className='away'>
-                  <img src={data.awayimg} alt='img' />
-                  {data.away}
-                </div>
-              </div>
-            ))}
+      {data.map((data) => (
+        <>
+          <div className='main_league_title' key={data.id}>
+            {data.title}
           </div>
-        </div>
-      </Link>
+          <div className='main_league'>
+            <div className='epllist' key={data.id}>
+              <div className='home'>
+                {data.home} <img src={data.homeimg} alt='img' />
+              </div>
+              <div className='game_time'>{data.time}</div>
+              <div className='away'>
+                <img src={data.awayimg} alt='img' />
+                {data.away}
+              </div>
+            </div>
+          </div>
+        </>
+      ))}
     </div>
   );
 }

@@ -2,47 +2,66 @@
 
 .information {
   width: 59%;
+  margin-right: 5%;
 }
 
-.title {
+.main_league_title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.4rem;
 }
 
-.epllist {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.main_league {
+  height: 6vw;
 
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 8px 3px rgba(0, 0, 0, 0.12), 0 4px 14px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
 
   margin-top: 10%;
 }
 
-.home {
+.main_league:hover {
+  transform: scale(1.03);
+}
+
+.epllist {
+  width: 100%;
+
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
+.home,
+.away {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.9rem;
+  font-weight: 550;
+}
+
 .home img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 
   margin-left: 15px;
 }
 
-.away {
-  display: flex;
-  align-items: center;
-}
-
 .away img {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 
   margin-right: 15px;
 }
 
-Link {
-  text-decoration: none;
+.game_time {
+  color: rgb(133, 131, 131);
+
+  font-size: 1.3rem;
+  font-weight: 550;
 }

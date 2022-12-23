@@ -3,37 +3,38 @@ import axios from 'axios';
 import './EplRanking.css';
 
 export default function MainLanking() {
+  const [rankTitle, setRankTitle] = useState([]);
+  useEffect(() => {
+    axios.get('http://localhost:3001/Epl_LanKing_title').then((res) => setRankTitle(res.data));
+  }, []);
+
   const [rank, setRank] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:3001/EPL_Lanking').then((res) => setRank(res.data));
+    axios.get('http://localhost:3001/Epl_Lanking').then((res) => setRank(res.data));
   }, []);
-  console.log(rank);
-  return (
-    <div className='Ranking'>
-      <div>
-        {rank.map((data) => (
-          <div className='rank_title' key={data.id}>
-            <div>
-              <div>{data.title}</div>
-              <div>{data.text}</div>
-            </div>
-            <img src={data.logo} alt='img' />
-          </div>
-        ))}
-      </div>
 
-      <div className='rank_list'>
-        {rank.map((data) => (
-          <div key={data.id}>
-            <div className='list_logo'>
-              <div>
-                <img src={data.img1} alt='img' />
-              </div>
-              <div>{data.name1}</div>
-            </div>
+  return (
+    <div className='Ranking_body'>
+      {rankTitle.map((data) => (
+        <div className='rank_header' key={data.id}>
+          <div>
+            <div className='rank_title'>{data.title}</div>
+            <div className='rank_text'>{data.text}</div>
           </div>
-        ))}
-      </div>
+          <img className='rank_logo' src={data.logo} alt='img' />
+        </div>
+      ))}
+      <div className='ranking_list_title'>Top Lanking</div>
+      {rank.map((data) => (
+        <div className='rank_list' key={data.id}>
+          <div className='list_logo'>
+            <div>
+              <img src={data.img} alt='img' />
+            </div>
+            <div className='rank_list_name'>{data.name}</div>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
