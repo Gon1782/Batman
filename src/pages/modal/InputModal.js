@@ -13,7 +13,7 @@ const InputModal = ({ show, onHide }) => {
   };
 
   const onSubmitHandler = async (posts) => {
-    await axios.post("http://localhost:3001/todos", posts);
+    await axios.post("http://localhost:3001/lists", posts);
 
     setPosts(data);
   };
