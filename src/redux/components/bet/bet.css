@@ -1,0 +1,45 @@
+.bet_layout {
+  width: 100%;
+  max-width: 1280px;
+  align-items: center;
+  margin-top: 1rem;
+  background: white;
+  border-radius: 1rem;
+}
+.bet_body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.bet_to {
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+.bet_to:hover {
+  background-color: rgba(0 0 0/10%);
+  transition: 1s ease;
+}
+
+.bet_btn {
+    width: 100px;
+    height: 50px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
