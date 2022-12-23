@@ -2,8 +2,11 @@ import axios from 'axios';
 import { useQuery } from 'react-query';
 import LaligaLanking from '../LankingList/LaligaLanking';
 import MainTopLeagueList from '../TopLeaguesList/MainTopLeagueList';
+import { useNavigate } from 'react-router-dom';
 
 export default function Laliga() {
+  const navigate = useNavigate();
+
   const { isLoading, error, data } = useQuery(['information'], async () => await axios.get('http://localhost:3001/Laliga').then((res) => res.data));
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>error</p>;
@@ -18,7 +21,12 @@ export default function Laliga() {
               {data.title}
             </div>
 
-            <div className='main_league'>
+            <div
+              className='main_league'
+              onClick={() => {
+                navigate('/detail');
+              }}
+            >
               <div className='epllist' key={data.id}>
                 <div className='home'>
                   {data.home} <img src={data.homeimg} alt='img' />
