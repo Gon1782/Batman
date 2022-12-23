@@ -181,6 +181,7 @@
     {
       "id": 1,
       "writer": "작성자",
+      "password": "1234",
       "comment": "가즈아!!!!!!!",
       "date": "2022.12.22 22:00",
       "like": 32,
@@ -189,6 +190,7 @@
     {
       "id": 2,
       "writer": "작성자",
+      "password": "1234",
       "comment": "가즈아!!!!!!!v",
       "date": "2022.12.22 22:22",
       "like": 32,
@@ -197,6 +199,7 @@
     {
       "id": 3,
       "writer": "작성자",
+      "password": "1234",
       "comment": "가즈아!!!!!!!",
       "date": "2022.12.22 22:30",
       "like": 32,
@@ -205,6 +208,7 @@
     {
       "id": 4,
       "writer": "작성자",
+      "password": "1234",
       "comment": "가즈아!!!!!!!",
       "date": "2022.12.22 22:58",
       "like": 32,
@@ -213,6 +217,7 @@
     {
       "id": 5,
       "writer": "작성자",
+      "password": "1234",
       "comment": "가즈아!!!!!!!",
       "date": "2022.12.22 23:10",
       "like": 32,
@@ -221,6 +226,7 @@
     {
       "id": 6,
       "writer": "작성자",
+      "password": "1234",
       "comment": "가즈아!!!!!!!",
       "date": "2022.12.22 23:30",
       "like": 32,
@@ -229,6 +235,7 @@
     {
       "id": 7,
       "writer": "작성자",
+      "password": "1234",
       "comment": "가즈아!!!!!!!",
       "date": "2022.12.22 23:40",
       "like": 32,
@@ -237,6 +244,7 @@
     {
       "id": 8,
       "writer": "작성자",
+      "password": "1234",
       "comment": "가즈아!!!!!!!",
       "date": "2022.12.22 23:50",
       "like": 32,
@@ -244,43 +252,32 @@
     },
     {
       "id": 9,
-      "writer": "작성자",
-      "comment": "가즈아!!!!!!!",
-      "date": "2022.12.22 23:58",
-      "like": 32,
-      "dislike": 26
-    },
-    {
-      "id": 10,
-      "writer": "작성자",
-      "comment": "가즈아!!!!!!!",
-      "date": "2022.12.23 00:41",
-      "like": 30,
-      "dislike": 26
-    },
-    {
-      "id": 11,
-      "writer": "작성자",
-      "comment": "가즈아!!!!!!!",
-      "date": "2022.12.23 00:42",
-      "like": 30,
-      "dislike": 26
-    },
-    {
-      "id": 12,
-      "writer": "작성자",
-      "comment": "가즈아!!!!!!!asdasdasdasdasd",
-      "date": "2022.12.23 00:43",
-      "like": 30,
-      "dislike": 26
-    },
-    {
-      "id": 13,
       "writer": "asfe",
-      "comment": "fasefasef",
-      "date": "2022.12.23 3:52",
+      "password": "eeee",
+      "comment": "asdfasdfasf",
+      "date": "2022.12.24 03:14",
       "like": 0,
       "dislike": 0
+    }
+  ],
+  "bets": [
+    {
+      "id": 1,
+      "homeAndAway": "Home",
+      "betMoney": 2000,
+      "isBet": false
+    },
+    {
+      "id": 2,
+      "homeAndAway": "Draw",
+      "betMoney": 700,
+      "isBet": false
+    },
+    {
+      "id": 3,
+      "homeAndAway": "Away",
+      "betMoney": 700,
+      "isBet": true
     }
   ]
 }
