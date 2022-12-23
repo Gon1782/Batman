@@ -1,29 +1,29 @@
 import React from "react";
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "../redux/components/Header/Header";
 import Footer from "../redux/components/Footer/Footer";
-import Detail from "../pages/Detail";
 import "./router.css";
+import Epl from "../pages/MainPage/LeagueInformation/Epl";
+import LaLiga from "../pages/MainPage/LeagueInformation/Laliga";
+import SerieA from "../pages/MainPage/LeagueInformation/SerieA";
+import MainpageRouter from "../pages/MainPage/MainpageRouter";
+import Detail from "../pages/Detail";
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <div className="Wrapper">
-        <Header />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <div>
-                메인페이지
-                <Link to="/detail">Go to Detail</Link>
-              </div>
-            }
-          />
-          <Route path="/community" element={<div>커뮤니티</div>} />
-          <Route path="/detail" element={<Detail />} />
-        </Routes>
-
+      <div className="wrapper">
+        <div className="contentWrapper">
+          <Header />
+          <Routes>
+            <Route path="/" element={<MainpageRouter />} />
+            <Route path="/" element={<Epl />} />
+            <Route path="/Laliga" element={<LaLiga />} />
+            <Route path="/SerieA" element={<SerieA />} />
+            <Route path="/community" element={<></>} />
+            <Route path="/detail" element={<Detail />} />
+          </Routes>
+        </div>
         <Footer />
       </div>
     </BrowserRouter>
