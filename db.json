@@ -2,6 +2,7 @@
   "posts": [
     {
       "id": 1,
+<<<<<<< HEAD
       "title": "응원팀: 맨시티",
       "contents": "내용: 맨시티 마핸승 걸었습니다."
     },
@@ -25,3 +26,20 @@
 ]
 
 }
+=======
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
+>>>>>>> 686710853796f67d441469beaac5d14f17a62eb2
