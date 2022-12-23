@@ -4,7 +4,6 @@ body {
 
 .detail_layout {
     display: grid;
-    grid-template-rows: 1fr 1fr 2fr;
     justify-items: center;
     width: 100vw;
     max-width: 1280px;

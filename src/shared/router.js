@@ -20,6 +20,7 @@ const Router = () => {
                 </>
               }
             />
+            <Route path="/detail" element={<Detail />} />
             <Route
               path="/community"
               element={
