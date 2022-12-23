@@ -21,6 +21,7 @@ const Commentform = () => {
   const [comment, setComment] = useState({
     id: 0,
     writer: "",
+    password: "",
     comment: "",
     date: "",
     like: 0,
@@ -34,14 +35,15 @@ const Commentform = () => {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    if (comment.writer.trim() === "" || comment.comment.trim() === "") {
-      alert("제목과 내용을 입력해주세요.");
+    if (comment.writer.trim() === "" || comment.comment.trim() === "" || comment.password.trim() === "") {
+      alert("작성자 댓글내용 비밀번호를 입력해 주세요");
       return;
     }
-    commentMutation.mutate({ ...comment, date: `${year}.${month}.${day} ${hour}:${minute}` });
+    commentMutation.mutate({ ...comment, date: `${year}.${month}.${day} ${hour > 10 ? hour : "0"+hour}:${minute}` });
     setComment({
       id: 0,
       writer: "",
+      password: "",
       comment: "",
       date: "",
       like: 0,
@@ -51,10 +53,14 @@ const Commentform = () => {
 
   return (
     <form className="comment_container" onSubmit={onSubmitHandler}>
-      <label className="comment_label">
-        작성자
-        <input type="text" name="writer" className="writer_input" onChange={onChangeHandler} value={comment.writer} />
-      </label>
+      <div className="writer_box">
+        <label className="comment_label">
+          <input type="text" name="writer" placeholder="작성자" className="writer_input" onChange={onChangeHandler} value={comment.writer} />
+        </label>
+        <label className="comment_label">
+          <input type="password" name="password" placeholder="비밀번호" className="password_input" onChange={onChangeHandler} value={comment.password} />
+        </label>
+      </div>
       <label className="comment_label">
         댓글
         <input type="text" name="comment" className="comment_input" onChange={onChangeHandler} value={comment.comment} />

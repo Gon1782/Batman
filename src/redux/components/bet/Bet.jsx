@@ -10,7 +10,7 @@ const Bet = () => {
   const queryClient = useQueryClient();
 
   const changeMutation = useMutation(changeBet, {
-    onSuccess: (id) => {
+    onSuccess: () => {
       queryClient.invalidateQueries("bets")
     }
   });
@@ -33,8 +33,14 @@ const Bet = () => {
   let drawOdd = ((money[0] + money[2]) / (money[1]/100) + 100)/100
   let awayOdd = ((money[0] + money[1]) / (money[2]/100) + 100)/100
 
+  let betOnlyOne = data.filter(x => x.isBet === true)
+  let betId = betOnlyOne.map(x => x.id)[0]
+  let bettingMoney = betOnlyOne.map(x => x.betMoney)[0]
+  let onBetting = betOnlyOne.map(x => x.isBet)[0]
+
   const betHandler = (id ,onBet) => {
-    !onBet ? changeBet(id, {betMoney: money[id-1] + 100, isBet: !onBet}) : changeBet(id, {betMoney: money[id-1] - 100, isBet: !onBet})
+    !onBet ? changeBet(id, {betMoney: money[id-1] + 100, isBet: !onBet}) : changeBet(id, {betMoney: money[id-1] - 100, isBet: !onBet}) 
+    if (betOnlyOne.length !== 0) changeBet(betId, {betMoney: bettingMoney, isBet: !onBetting})
     changeMutation.mutate(id) 
   }
 
