@@ -1,12 +1,12 @@
 import React from 'react';
 import Epl from './LeagueInformation/Epl';
 import MainTopLeagueList from './TopLeaguesList/MainTopLeagueList';
-import MainLanking from './LankingList/MainLanking';
+import EplLanking from './LankingList/EplLanking';
 
 export default function MainpageRouter() {
   const style = {
     display: 'flex',
-    marginTop: '5%',
+    marginTop: '3%',
     backgroundColor: '#C0C0C0',
   };
 
@@ -14,7 +14,7 @@ export default function MainpageRouter() {
     <div style={style}>
       <MainTopLeagueList />
       <Epl />
-      <MainLanking />
+      <EplLanking />
     </div>
   );
 }
