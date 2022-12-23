@@ -1,4 +1,10 @@
-.wrapper {
+.Wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* .wrapper {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -6,4 +12,4 @@
 
 .contentWrapper {
   flex: 1;
-}
+} */
