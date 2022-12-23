@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Modal, Button, Form, Container, FloatingLabel } from 'react-bootstrap'
 
 const InputModal = ({ show, onHide }) => {
   const [posts, setPosts] = useState({
