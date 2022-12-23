@@ -1,12 +1,12 @@
 body {
-    background-color: bisque;
+  background-color: #c0c0c0;
 }
 
 .detail_layout {
-    display: grid;
-    justify-items: center;
-    width: 100vw;
-    max-width: 1280px;
-    height: 90%;
-    margin: auto;
+  display: grid;
+  justify-items: center;
+  width: 100vw;
+  max-width: 1280px;
+  height: 90%;
+  margin: auto;
 }
