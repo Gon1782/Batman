@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Epl.css';
 
 export default function Epl() {
@@ -11,23 +12,24 @@ export default function Epl() {
   return (
     <div className='information'>
       <div className='title'>Premier League</div>
-
-      <div className='league'>
-        <div>
-          {info.map((data) => (
-            <div className='epllist' key={data.id}>
-              <div className='home'>
-                {data.home} <img src={data.homeimg} alt='img' />
+      <Link to='/Laliga'>
+        <div className='league'>
+          <div>
+            {info.map((data) => (
+              <div className='epllist' key={data.id}>
+                <div className='home'>
+                  {data.home} <img src={data.homeimg} alt='img' />
+                </div>
+                <div>{data.time}</div>
+                <div className='away'>
+                  <img src={data.awayimg} alt='img' />
+                  {data.away}
+                </div>
               </div>
-              <div>{data.time}</div>
-              <div className='away'>
-                <img src={data.awayimg} alt='img' />
-                {data.away}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

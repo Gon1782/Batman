@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Main_page.css';
+import './EplRanking.css';
 
 export default function MainLanking() {
-  // const i = 1;
   const [rank, setRank] = useState([]);
   useEffect(() => {
     axios.get('http://localhost:3001/EPL_Lanking').then((res) => setRank(res.data));
   }, []);
+  console.log(rank);
   return (
     <div className='Ranking'>
       <div>

@@ -1,6 +1,8 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import './Epl.css';
+import MainTopLeagueList from '../TopLeaguesList/MainTopLeagueList';
+
+import './Laliga.css';
 
 export default function LaLiga() {
   const [info, setInfo] = useState([]);
@@ -9,23 +11,26 @@ export default function LaLiga() {
   }, []);
   console.log(info);
   return (
-    <div className='information'>
-      <div className='title'>Premier League</div>
+    <div className='Laliga_body'>
+      <MainTopLeagueList />
+      <div className='information'>
+        <div className='title'>Premier League</div>
 
-      <div className='league'>
-        <div>
-          {info.map((data) => (
-            <div className='epllist' key={data.id}>
-              <div className='home'>
-                {data.home} <img src={data.homeimg} alt='img' />
+        <div className='league'>
+          <div>
+            {info.map((data) => (
+              <div className='epllist' key={data.id}>
+                <div className='home'>
+                  {data.home} <img src={data.homeimg} alt='img' />
+                </div>
+                <div>{data.time}</div>
+                <div className='away'>
+                  <img src={data.awayimg} alt='img' />
+                  {data.away}
+                </div>
               </div>
-              <div>{data.time}</div>
-              <div className='away'>
-                <img src={data.awayimg} alt='img' />
-                {data.away}
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

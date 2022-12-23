@@ -1,0 +1,22 @@
+.list {
+  width: 20%;
+  height: 100vh;
+
+  margin-left: 5%;
+}
+.Topleagues {
+  font-size: 2.3rem;
+  font-weight: 600;
+
+  margin-bottom: 15%;
+}
+
+.Epl,
+.Laliga,
+.SerieA {
+  font-size: 1.6rem;
+  font-weight: 400;
+
+  cursor: pointer;
+  margin-bottom: 15px;
+}
