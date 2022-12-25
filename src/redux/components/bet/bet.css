@@ -13,7 +13,6 @@
   justify-content: space-around;
   align-items: center;
 }
-
 .bet {
   width: 250px;
   height: 250px;
@@ -22,12 +21,19 @@
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  margin-bottom: 1rem;
-  gap: 1rem;
+  margin-bottom: 2rem;
   cursor: pointer;
 }
-.bet.on {
-  cursor: default;
+.bet_disabled {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  cursor: not-allowed;
 }
 .bet_to {
   width: 200px;
@@ -36,6 +42,14 @@
   border-radius: 50%;
   background: white;
   cursor: pointer;
+}
+.bet_to_disabled {
+  width: 200px;
+  height: 200px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  cursor: not-allowed;
 }
 .bet_to:hover {
   background-color: rgba(0 0 0/10%);
@@ -47,15 +61,16 @@
   border: none;
   border-radius: 50%;
   background: gray;
+  cursor: pointer;
 }
 
 .bet_btn {
-    width: 100px;
-    height: 2rem;
-    border: none;
-    background: white;
-    color: black;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
+  width: 400px;
+  height: 2rem;
+  border: none;
+  background: white;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
 }
