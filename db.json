@@ -2,7 +2,7 @@
   "EPL": [
     {
       "id": 1000,
-      "title": "premier League",
+      "title": "Premier League",
       "home": "리버풀",
       "homeimg": "https://upload.wikimedia.org/wikipedia/ko/thumb/0/05/%EB%A6%AC%EB%B2%84%ED%92%80_FC_%EB%A1%9C%EA%B3%A0.svg/1200px-%EB%A6%AC%EB%B2%84%ED%92%80_FC_%EB%A1%9C%EA%B3%A0.svg.png",
       "away": "레스터",
@@ -14,7 +14,7 @@
       "home": "브라이턴",
       "homeimg": "https://blog.kakaocdn.net/dn/GyBKz/btqEbtSfbBN/1y3Sg38N7yb9kITbElwua1/img.png",
       "away": "아스날",
-      "awayimg": "https://blog.kakaocdn.net/dn/dfdza0/btqD9u4yxr2/zMiJQjhtw8dvWfpltl0u3k/img.png",
+      "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
       "time": "01.01 12:00"
     },
     {
@@ -43,7 +43,7 @@
     {
       "id": 1201,
       "name": "맨 시티",
-      "img": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/1953831101/B.jpg?711000000"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png"
     },
     {
       "id": 1202,
@@ -256,17 +256,17 @@
       "password": "test123",
       "comment": "테스트테스트테스트테스트테스트",
       "date": "2022.12.26 05:28",
-      "likes": 12,
-      "dislikes": 10
+      "likes": 13,
+      "dislikes": 11
     },
     {
       "id": 11,
-      "writer": "ㅁㄴㅇㄹ",
-      "password": "asefasef",
-      "comment": "asefasefasef",
-      "date": "2022.12.26 14:54",
-      "like": 0,
-      "dislike": 0
+      "writer": "ㄴㄴㄴ",
+      "password": "1234",
+      "comment": "내가 누구게",
+      "date": "2022.12.26 09:42",
+      "likes": 0,
+      "dislikes": 0
     }
   ],
   "bets": [
