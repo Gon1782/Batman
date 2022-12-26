@@ -5,8 +5,10 @@ import { StBtn } from "../../../styles/styled-component";
 import { hideModal } from "../../modules/modalSlice";
 import { useMutation, useQuery, useQueryClient } from "react-query";
 import { deleteComment, getComments } from "../../../api/api";
+import { hideDropdown } from '../../modules/dropdownSlice';
+import { showEditBtn } from '../../modules/commentsSlice';
 
-const CommentModal = ({toggleEdit}) => {
+const CommentModal = () => {
   const queryClient = useQueryClient();
   const dispatch = useDispatch();
   const modal = useSelector((state) => state.modal);
@@ -18,9 +20,10 @@ const CommentModal = ({toggleEdit}) => {
     },
   });
 
-  const onModifyHanler = (id) => {
-    toggleEdit(id)
-  }
+  const showEdit = (id) => {
+    dispatch(showEditBtn(id))
+    dispatch(hideDropdown(id))
+  };
 
   const onDeleteHandler = (id) => {
     deleteMutation.mutate(id);
@@ -29,7 +32,7 @@ const CommentModal = ({toggleEdit}) => {
   const closeModalHandler = () => {
     dispatch(hideModal());
   };
-
+  
   const closeModalIfClickOutside = (e) => {
     if (e.target === e.currentTarget) {
       closeModalHandler();
@@ -69,7 +72,7 @@ const CommentModal = ({toggleEdit}) => {
             color="white"
             onClick={() => {
               if (idPw[0][0] === modal.modalId && idPw[0][1] === password) {
-                if (modal.edit === "edit") onModifyHanler(modal.modalId)
+                if (modal.edit === "edit") showEdit(modal.modalId)
                 if (modal.edit === "delete") onDeleteHandler(modal.modalId);
                 closeModalHandler();
               } else {

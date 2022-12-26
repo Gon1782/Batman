@@ -3,26 +3,22 @@ import React, { useEffect, useRef, useState } from "react";
 import { useQuery, useQueryClient, useMutation } from "react-query";
 import { useDispatch, useSelector } from "react-redux";
 import { changeComment, getComments } from "../../../api/api";
+import { clickDislike, clickLike, hideEditBtn } from "../../modules/commentsSlice";
+import { hideDropdown, showDropdown } from "../../modules/dropdownSlice";
 import { showModal } from "../../modules/modalSlice";
 import Commentform from "../CommentForm/Commentform";
-import CommentModal from '../CommentModal/CommentModal';
+import CommentModal from "../CommentModal/CommentModal";
 import "./comment.css";
 
 const Comment = () => {
   const queryClient = useQueryClient();
   const dispatch = useDispatch();
   const modal = useSelector((state) => state.modal);
+  const dropDown = useSelector((state) => state.dropdown);
+  const editBtn = useSelector((state) => state.comments.edit);
+  const like = useSelector((state) => state.comments.like);
+  const dislike = useSelector((state) => state.comments.dislike);
   const node = useRef();
-
-  const [dropDown, setDropdown] = useState({
-    id: 0,
-    dropdown: false,
-  });
-  const [editBtn, setEditBtn] = useState({
-    id: 0,
-    onEdit: false,
-  });
-  const [content, setContent] = useState("");
 
   const changeMutation = useMutation(changeComment, {
     onSuccess: () => {
@@ -30,26 +26,32 @@ const Comment = () => {
     },
   });
 
-  const toggleEdit = (id) => {
-    setEditBtn({ ...editBtn, id: id, onEdit: !editBtn.onEdit });
-    if (dropDown.dropdown) toggleDropdown(id);
+  // 드랍다운
+  const toggleDropdownHandler = (id) => {
+    dispatch(showDropdown(id));
+    if (dropDown.show === true) dispatch(hideDropdown(id));
   };
 
-  const toggleDropdown = (id) => {
-    setDropdown({ ...dropDown, id: id, dropdown: !dropDown.dropdown });
-  };
-
-   useEffect(() => {
-    const clickOutside = (e) => {
-      if (dropDown.dropdown && node.current && !node.current.contains(e.target)) toggleDropdown();
+  useEffect(() => {
+    const closeDropdownIfClickOutside = (e) => {
+      if (node.current && !node.current.contains(e.target)) {
+        dispatch(hideDropdown(dropDown.id));
+      }
     };
 
-    document.addEventListener("mousedown", clickOutside);
-
+    document.addEventListener("click", closeDropdownIfClickOutside);
     return () => {
-      document.removeEventListener("mousedown", clickOutside);
+      document.removeEventListener("click", closeDropdownIfClickOutside);
     };
-  },[dropDown]);
+  }, [dropDown]);
+
+  //수정하기
+  const showModalHandler = (id, edit) => {
+    dispatch(showModal([id, edit]));
+    toggleDropdownHandler(id);
+  };
+
+  const [content, setContent] = useState();
 
   const onChange = (event) => {
     setContent(event.target.value);
@@ -58,13 +60,23 @@ const Comment = () => {
   const onEditHandler = (id, edit) => {
     changeComment(id, edit);
     changeMutation.mutate(id);
-    toggleEdit(id);
+    dispatch(hideEditBtn(id))
   };
 
-  const showModalHandler = (id, edit) => {
-    dispatch(showModal([id, edit]));
-    if (dropDown.dropdown) toggleDropdown(id);
+  //좋아요, 싫어요
+  const likeHandler = (id, edit) => {
+    dispatch(clickLike(id));
+    changeComment(id, { likes: edit + 1 });
+    changeMutation.mutate(id);
   };
+
+  const disLikeHandler = (id, edit) => {
+    dispatch(clickDislike(id));
+    changeComment(id, { dislikes: edit + 1 });
+    changeMutation.mutate(id);
+  };
+
+  // GET comments
 
   const { isLoading, isError, data, error } = useQuery("comments", getComments, {
     refetchOnWindowFocus: false,
@@ -81,8 +93,11 @@ const Comment = () => {
 
   return (
     <div className="comment_layout" ref={node}>
-      {modal.show && <CommentModal toggleEdit={toggleEdit}/>}
+      {/* 모달 */}
+      {modal.show && <CommentModal />}
+      {/* 코멘트 입력창 */}
       <Commentform />
+      {/* 코멘트 리스트 */}
       <div className="comment_list">
         {data.map((x) => {
           return (
@@ -101,10 +116,10 @@ const Comment = () => {
                   </div>
                 </div>
                 <div className="comment_dropdown">
-                  <button className="btn_dropdown" onClick={() => toggleDropdown(x.id)}>
+                  <button className="btn_dropdown" onClick={() => toggleDropdownHandler(x.id)}>
                     ...
                   </button>
-                  <div className={dropDown.id === x.id && dropDown.dropdown ? "btn_wrap" : "btn_wrap_hide"}>
+                  <div className={dropDown.id === x.id && dropDown.show ? "btn_wrap" : "btn_wrap_hide"}>
                     <button className="edit_btn" onClick={() => showModalHandler(x.id, "edit")}>
                       수정
                     </button>
@@ -117,8 +132,12 @@ const Comment = () => {
               <div className="comment_footer">
                 <div>{x.date}</div>
                 <div className="btn_box">
-                  <button className="comment_like">❤️ {x.like}</button>
-                  <button className="comment_like">💔 {x.dislike}</button>
+                  <button className={like.id === x.id && like.isLiked ? "onLikes" : "comment_like"} onClick={() => likeHandler(x.id, x.likes)} disabled={like.id === x.id && like.isLiked ? "disabled" : ""}>
+                    ❤️ {x.likes}
+                  </button>
+                  <button className={dislike.id === x.id && dislike.isDisLiked ? "onDisLikes" : "comment_like"} onClick={() => disLikeHandler(x.id, x.dislikes)} disabled={dislike.id === x.id && dislike.isDisLiked ? "disabled" : ""}>
+                    💔 {x.dislikes}
+                  </button>
                 </div>
               </div>
             </div>

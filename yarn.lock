@@ -7791,10 +7791,17 @@ react-refresh@^0.11.0:
   resolved "https://registry.npmjs.org/react-refresh/-/react-refresh-0.11.0.tgz"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
+<<<<<<< HEAD
 react-router-dom@6:
   version "6.6.0"
   resolved "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.6.0.tgz"
   integrity sha512-qC4jnvpfCPKVle1mKLD75IvZLcbVJyFMlSn16WY9ZiOed3dgSmqhslCf/u3tmSccWOujkdsT/OwGq12bELmvjg==
+=======
+"react-router-dom@^6.6.0":
+  "integrity" "sha512-qC4jnvpfCPKVle1mKLD75IvZLcbVJyFMlSn16WY9ZiOed3dgSmqhslCf/u3tmSccWOujkdsT/OwGq12bELmvjg=="
+  "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-6.6.0.tgz"
+  "version" "6.6.0"
+>>>>>>> ad80412878679ab254bfdf64b9c8811735872f2c
   dependencies:
     "@remix-run/router" "1.2.0"
     react-router "6.6.0"
