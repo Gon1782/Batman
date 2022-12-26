@@ -266,28 +266,6 @@
       "dislikes": 29
     },
     {
-<<<<<<< HEAD
-      "id": 8,
-      "writer": "작성자",
-      "password": "1234",
-      "comment": "가즈아!!!!!!!",
-      "date": "2022.12.22 23:50",
-      "likes": 36,
-      "dislikes": 30
-    },
-    {
-      "id": 9,
-      "writer": "asfe",
-      "password": "eeee",
-      "comment": "asdfasdfasf",
-      "date": "2022.12.24 03:14",
-      "like": 0,
-      "dislike": 0
-    },
-    {
-
-=======
->>>>>>> f7a39c8b9c43f513a8c36196f65f1db7a9520512
       "id": 10,
       "writer": "테스트 ",
       "password": "test123",
@@ -302,8 +280,8 @@
       "password": "1234",
       "comment": "내가 누구게",
       "date": "2022.12.26 09:42",
-      "likes": 5,
-      "dislikes": 5
+      "likes": 6,
+      "dislikes": 6
     }
   ],
   "bets": [
