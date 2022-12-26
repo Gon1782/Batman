@@ -258,8 +258,6 @@
       "date": "2022.12.26 05:28",
       "likes": 13,
       "dislikes": 11
-<<<<<<< HEAD
-=======
     },
     {
       "id": 11,
@@ -267,11 +265,8 @@
       "password": "1234",
       "comment": "내가 누구게",
       "date": "2022.12.26 09:42",
-      "like": 0,
-      "dislike": 0,
-      "likes": null,
-      "dislikes": null
->>>>>>> 34af1d0215c19c0bda50989a2e1ffa5f9d6acb1b
+      "likes": 0,
+      "dislikes": 0
     }
   ],
   "bets": [
@@ -288,7 +283,7 @@
     {
       "id": 3,
       "homeAndAway": "Away",
-      "betMoney": 5800
+      "betMoney": 5900
     }
   ]
 }
