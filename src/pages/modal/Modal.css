@@ -1,0 +1,89 @@
+.container {
+  background: rgba(255, 255, 255, 0.863);
+  box-shadow: 0 8px 32px 0 rgba(101, 104, 150, 0.37);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 700px;
+  height: 500px;
+  padding: 10px;
+}
+
+/* 모달창 내부 X버튼 */
+.close {
+  float: right;
+  padding-right: 10px;
+  cursor: pointer; /*이거 쓰면 커서 손모양으로 바뀜 굿 */
+  text-shadow: 1px 1px 2px gray;
+  color: black;
+  border: none;
+  background: transparent;
+  font-size: 40px;
+}
+
+.modal-modal-overlay {
+  position: fixed;
+  left: 0;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  background: rgba(145, 138, 138, 0.8); /*배경색 넣는방법 */
+}
+.simTitle {
+  font-size: 25px;
+  font-weight: 600;
+}
+.title {
+  background-color: rgba(179, 172, 172, 0.8);
+  width: 620px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.simContents {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.contents {
+  background-color: rgba(179, 172, 172, 0.8);
+  width: 600px;
+  height: 150px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.modal-Form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+.simBtn {
+  width: 130px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  margin-left: 270px;
+  margin-top: 25px;
+  background-color: rgba(179, 172, 172, 0.8);
+}
+
+.simBtn:hover {
+  border: 3px solid black;
+}
