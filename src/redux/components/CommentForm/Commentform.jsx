@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useQueryClient, useMutation } from "react-query";
+import { useParams } from 'react-router-dom';
 import { postComment } from "../../../api/api";
 
 const Commentform = () => {
   const queryClient = useQueryClient();
+  const { path } = useParams();
 
   let now = new Date();
   let year = now.getFullYear();
@@ -20,6 +22,7 @@ const Commentform = () => {
 
   const [comment, setComment] = useState({
     id: 0,
+    param: "",
     writer: "",
     password: "",
     comment: "",
@@ -55,9 +58,10 @@ const Commentform = () => {
       alert("내용이 너무 길어요\n내용은 80글자까지만 작성해주세요")
       return;
     }
-    commentMutation.mutate({ ...comment, date: `${year}.${month}.${day} ${hour > 9 ? hour : "0"+hour}:${minute > 9 ? minute : "0"+minute}` });
+    commentMutation.mutate({ ...comment, date: `${year}.${month}.${day} ${hour > 9 ? hour : "0"+hour}:${minute > 9 ? minute : "0"+minute}`, param: path });
     setComment({
       id: 0,
+      param: "",
       writer: "",
       password: "",
       comment: "",
