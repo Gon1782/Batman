@@ -5,15 +5,15 @@ import Man_City from "../../../assets/img/Man_City.png";
 import Liverpool from "../../../assets/img/Liverpool.png";
 import draw from "../../../assets/img/DRAW.png";
 import { changeBet, getBets } from "../../../api/api";
-import { useDispatch, useSelector } from 'react-redux';
-import { betOff, betOn } from '../../modules/betSlice';
+import { useDispatch, useSelector } from "react-redux";
+import { betOff, betOn } from "../../modules/betSlice";
 
 const Bet = () => {
   const queryClient = useQueryClient();
   const dispatch = useDispatch();
-  const bet = useSelector((state) => state.bet)
-  let betCheck = bet.filter(x => x.isBet === true).length
-  
+  const bet = useSelector((state) => state.bet);
+  let betCheck = bet.filter((x) => x.isBet === true).length;
+
   const changeMutation = useMutation(changeBet, {
     onSuccess: () => {
       queryClient.invalidateQueries("bets");
@@ -37,15 +37,18 @@ const Bet = () => {
   let homeOdd = ((money[1] + money[2]) / (money[0] / 100) + 100) / 100;
   let drawOdd = ((money[0] + money[2]) / (money[1] / 100) + 100) / 100;
   let awayOdd = ((money[0] + money[1]) / (money[2] / 100) + 100) / 100;
+  let homePercent = Math.round((money[0] / money.reduce((a, b) => a + b)) * 100);
+  let drawPercent = Math.round((money[1] / money.reduce((a, b) => a + b)) * 100);
+  let awayPercent = Math.round((money[2] / money.reduce((a, b) => a + b)) * 100);
 
   const betHandler = (id, onBet) => {
-    if(!onBet) {
+    if (!onBet) {
       dispatch(betOn(id));
-      changeBet(id, { betMoney: money[id - 1] + 100}) 
-     } else {
-      dispatch(betOff(id))
-      changeBet(id, { betMoney: money[id - 1] - 100});
-     } 
+      changeBet(id, { betMoney: money[id - 1] + 100 });
+    } else {
+      dispatch(betOff(id));
+      changeBet(id, { betMoney: money[id - 1] - 100 });
+    }
     changeMutation.mutate(id);
   };
 
@@ -56,6 +59,7 @@ const Bet = () => {
       img: Man_City,
       homeAndAway: "Home",
       odd: homeOdd,
+      percent: homePercent,
     },
     {
       id: 2,
@@ -63,6 +67,7 @@ const Bet = () => {
       img: draw,
       homeAndAway: "Draw",
       odd: drawOdd,
+      percent: drawPercent,
     },
     {
       id: 3,
@@ -70,6 +75,7 @@ const Bet = () => {
       img: Liverpool,
       homeAndAway: "Away",
       odd: awayOdd,
+      percent: awayPercent,
     },
   ];
 
@@ -80,24 +86,25 @@ const Bet = () => {
           let list = data.filter((a) => a.id === x.id);
           let team = list[0];
           let id = team.id;
-          let Bet = bet[id-1]
-          let labelClass = ""
-          let btnClass = ""
+          let Bet = bet[id - 1];
+          let labelClass = "";
+          let btnClass = "";
           if (Bet.id === id && betCheck > 0) {
-            labelClass = "bet_disabled"
-            btnClass = "bet_to_disabled"
+            labelClass = "bet_disabled";
+            btnClass = "bet_to_disabled";
           } else {
-            labelClass = "bet"
-            btnClass = "bet_to"
+            labelClass = "bet";
+            btnClass = "bet_to";
           }
           return (
             <label className={Bet.isBet ? "bet on" : labelClass} key={x.homeAndAway}>
-              <button className={Bet.isBet ? "bet_on" : btnClass} onClick={() => betHandler(id, Bet.isBet)} disabled={!Bet.isBet && betCheck > 0 ? "disabled": ""}>
+              <button className={Bet.isBet ? "bet_on" : btnClass} onClick={() => betHandler(id, Bet.isBet)} disabled={!Bet.isBet && betCheck > 0 ? "disabled" : ""}>
                 <img src={x.img} alt="" width="150px" height="150px" />
               </button>
               <div className="bet_btn">
                 <div>Bet: {team.betMoney}</div>
                 <div>{x.odd.toFixed(2)} X</div>
+                <div>{x.percent}%</div>
               </div>
             </label>
           );
