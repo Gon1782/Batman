@@ -9,9 +9,6 @@
   background: white;
   border-radius: 1rem;
 }
-.comment_layout::-webkit-scrollbar {
-  display: none;
-}
 .comment_container {
   position: sticky;
   top: 0;
@@ -28,13 +25,26 @@
   background: white;
   z-index: 999;
 }
+.writer_box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
 .comment_label {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 .writer_input {
-  height: 2rem;
+  height: 1.5rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1rem;
+}
+.password_input {
+  height: 1.5rem;
   border: 1px solid black;
   border-radius: 1rem;
   padding-left: 10px;
@@ -62,6 +72,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .comment_box {
   display: flex;
@@ -133,6 +144,15 @@
   border: 1px solid black;
   background: white;
 }
+.comment_password_input {
+  width: 60%;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.5rem;
+}
 .comment_footer {
   display: flex;
   justify-content: space-between;
@@ -148,6 +168,18 @@
 .comment_like:hover {
   background-color: rgba(0 0 0/30%);
   transition: 1s ease;
+}
+.onLikes {
+  background-color: yellowgreen;
+  color: black;
+  border: none;
+  border-radius: 1rem;
+}
+.onDisLikes {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 1rem;
 }
 .comment_dropdown {
   position: relative;
@@ -169,6 +201,7 @@
   display: none;
 }
 .edit_btn {
+  cursor: pointer;
   width: 6rem;
   height: 2.5rem;
   border-radius: 0.5rem;

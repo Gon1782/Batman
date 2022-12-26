@@ -10,3 +10,15 @@ body {
   height: 90%;
   margin: auto;
 }
+
+.up_btn {
+  display: flex;
+  justify-content: end;
+  position: sticky;
+  width: 100%;
+  border: none;
+  background-color: #c0c0c0;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+}
