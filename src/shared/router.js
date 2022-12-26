@@ -7,6 +7,7 @@ import LaLiga from "../pages/MainPage/LeagueInformation/Laliga";
 import SerieA from "../pages/MainPage/LeagueInformation/SerieA";
 import MainpageRouter from "../pages/MainPage/MainpageRouter";
 import Detail from "../pages/Detail";
+import Community from "../pages/Community/Community";
 
 const Router = () => {
   const style = {
@@ -23,7 +24,7 @@ const Router = () => {
           <Route path="/" element={<Epl />} />
           <Route path="/Laliga" element={<LaLiga />} />
           <Route path="/SerieA" element={<SerieA />} />
-          <Route path="/community" element={<></>} />
+          <Route path="/community" element={<Community />} />
           <Route path="/detail" element={<Detail />} />
           <Route path="/detail/:path" element={<Detail />} />
         </Routes>

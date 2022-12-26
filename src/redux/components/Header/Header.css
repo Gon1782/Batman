@@ -19,3 +19,7 @@
   height: 30px;
   text-align: center;
 }
+
+.navi {
+  cursor: pointer;
+}
