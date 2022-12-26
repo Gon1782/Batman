@@ -258,8 +258,6 @@
       "date": "2022.12.26 05:28",
       "likes": 13,
       "dislikes": 11
-<<<<<<< HEAD
-=======
     },
     {
       "id": 11,
@@ -271,7 +269,6 @@
       "dislike": 0,
       "likes": null,
       "dislikes": null
->>>>>>> 34af1d0215c19c0bda50989a2e1ffa5f9d6acb1b
     }
   ],
   "bets": [
