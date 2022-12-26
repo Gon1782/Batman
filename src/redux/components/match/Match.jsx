@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./match.css";
-import eplLogo from "../../../assets/img/EPL_logo.png";
 import ENG from "../../../assets/img/eng.png";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import axios from "axios";
@@ -47,6 +46,9 @@ const Match = () => {
 
   const [matchdatas, setMatchdatas] = useState([]);
   const matchData = matchdatas.filter((data) => data.id === LeagueUId(t)).map((data) => data.league);
+  const matchDatalogo = matchdatas.filter((data) => data.id === LeagueUId(t)).map((data) => data.logo);
+  const matchDatanationlogo = matchdatas.filter((data) => data.id === LeagueUId(t)).map((data) => data.nationlogo);
+  const matchDatanation = matchdatas.filter((data) => data.id === LeagueUId(t)).map((data) => data.nation);
   const matchDatahome = matchdatas.filter((data) => data.id === LeagueUId(t)).map((data) => data.home);
   const matchDatahomeimg = matchdatas.filter((data) => data.id === LeagueUId(t)).map((data) => data.homeimg);
   const matchDataaway = matchdatas.filter((data) => data.id === LeagueUId(t)).map((data) => data.away);
@@ -83,13 +85,13 @@ const Match = () => {
         </button>
         {/* 홈으로 돌아가는 버튼 */}
         <div className="league">
-          <img alt="img" width="22" height="22" src={eplLogo} />
+          <img alt="img" width="22" height="22" src={matchDatalogo} />
           {matchData}
         </div>
 
         <div className="country">
-          <img alt="img" width="22" height="22" src={ENG} />
-          <div>ENG</div>
+          <img alt="img" width="22" height="22" src={matchDatanationlogo} />
+          <div>{matchDatanation}</div>
         </div>
       </section>
       <section className="match_body">
