@@ -22,8 +22,10 @@ const bet = createSlice({
     betOn: (state, action) => {
       state[action.payload - 1].isBet = true;
     },
-    betOff: (state, action) => {
-      state[action.payload - 1].isBet = false;
+    betOff: (state) => {
+      state[0].isBet = false;
+      state[1].isBet = false;
+      state[2].isBet = false;
     },
   },
 });
