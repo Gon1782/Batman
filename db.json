@@ -266,6 +266,7 @@
       "dislikes": 29
     },
     {
+<<<<<<< HEAD
       "id": 8,
       "writer": "작성자",
       "password": "1234",
@@ -285,13 +286,15 @@
     },
     {
 
+=======
+>>>>>>> f7a39c8b9c43f513a8c36196f65f1db7a9520512
       "id": 10,
       "writer": "테스트 ",
       "password": "test123",
-      "comment": "테스트테스트테스트테스트테스트",
+      "comment": "테스트테스트테스트테스트테스트테스트",
       "date": "2022.12.26 05:28",
-      "likes": 13,
-      "dislikes": 11
+      "likes": 16,
+      "dislikes": 14
     },
     {
       "id": 11,
@@ -299,15 +302,15 @@
       "password": "1234",
       "comment": "내가 누구게",
       "date": "2022.12.26 09:42",
-      "likes": 0,
-      "dislikes": 0
+      "likes": 5,
+      "dislikes": 5
     }
   ],
   "bets": [
     {
       "id": 1,
       "homeAndAway": "Home",
-      "betMoney": 19100
+      "betMoney": 19200
     },
     {
       "id": 2,
