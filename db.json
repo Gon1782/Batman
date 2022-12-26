@@ -288,7 +288,7 @@
     {
       "id": 1,
       "homeAndAway": "Home",
-      "betMoney": 19200
+      "betMoney": 19300
     },
     {
       "id": 2,
@@ -298,7 +298,29 @@
     {
       "id": 3,
       "homeAndAway": "Away",
-      "betMoney": 5900
+      "betMoney": 6000
+    }
+  ],
+  "community": [
+    {
+      "id": 1,
+      "title": "맨시티 vs 맨유 누가 진정한 맨체스터 주인인가",
+      "contents": "맨시티 승"
+    },
+    {
+      "id": 2,
+      "title": "토트넘 올해는 무관탈출 가능한가",
+      "contents": "어림도 없다"
+    },
+    {
+      "id": "e749786b-6b3d-4f47-9d53-411f2049b1d0",
+      "title": "asehasehaswe",
+      "contents": "hasehaesh"
+    },
+    {
+      "id": "4575d8b3-1d71-4c82-a4c1-cdcafd839778",
+      "title": "asefsaefasgaseg",
+      "contents": "asefasefasgaseg"
     }
   ]
 }

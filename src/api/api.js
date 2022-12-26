@@ -10,12 +10,29 @@ export const getBets = async () => {
   return data;
 };
 
+export const getCommunity = async () => {
+  const { data } = await axios.get("http://localhost:3001/community");
+  return data;
+};
+
+export const postCommunity = async (post) => {
+  return axios.post("http://localhost:3001/community", post);
+};
+
 export const postComment = (comment) => {
   return axios.post("http://localhost:3001/comments", comment);
 };
 
+export const deleteCommunity = (id) => {
+  return axios.delete(`http://localhost:3001/community/${id}`);
+};
+
 export const deleteComment = (id) => {
   return axios.delete(`http://localhost:3001/comments/${id}`);
+};
+
+export const changeCommunity = async (id, edit) => {
+  return await axios.patch(`http://localhost:3001/community/${id}`, edit);
 };
 
 export const changeComment = async (id, edit) => {
