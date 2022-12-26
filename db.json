@@ -258,6 +258,15 @@
       "date": "2022.12.26 05:28",
       "likes": 12,
       "dislikes": 10
+    },
+    {
+      "id": 11,
+      "writer": "ㅁㄴㅇㄹ",
+      "password": "asefasef",
+      "comment": "asefasefasef",
+      "date": "2022.12.26 14:54",
+      "like": 0,
+      "dislike": 0
     }
   ],
   "bets": [
@@ -274,7 +283,7 @@
     {
       "id": 3,
       "homeAndAway": "Away",
-      "betMoney": 5800
+      "betMoney": 5900
     }
   ]
 }
