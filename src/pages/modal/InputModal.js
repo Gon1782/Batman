@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Modal, Button, Form, FloatingLabel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
+
 function InputModal() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -9,22 +10,21 @@ function InputModal() {
 
   const [posts, setPosts] = useState([]);
 
-  const fetchTodos = async () => {
-    const { data } = await axios.get("http://localhost:3001/posts");
-    setPosts(data);
-  };
-
   const onChangeText = (e) => {
     setPosts(e.target.value);
   };
 
-  const OnSubmitHandler = async (posts) => {
-    await axios.post("http://localhost:3001/posts", posts);
-    useEffect(() => {
-      fetchTodos();
-    }, []);
-  };
+  const OnSubmitHandler = (e) => {
+    e.preventDefault();
 
+    axios.post("http://localhost:3001/posts", posts).then((res) => {
+      if (res.data.success) {
+        alert("글쓰기 성공");
+      } else {
+        alert("글쓰기 실패");
+      }
+    });
+  };
   return (
     <>
       <Button variant="secondary" onClick={handleShow}>
