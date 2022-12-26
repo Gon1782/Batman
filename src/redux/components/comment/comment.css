@@ -9,9 +9,6 @@
   background: white;
   border-radius: 1rem;
 }
-.comment_layout::-webkit-scrollbar {
-  display: none;
-}
 .comment_container {
   position: sticky;
   top: 0;
@@ -75,6 +72,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .comment_box {
   display: flex;
@@ -170,6 +168,18 @@
 .comment_like:hover {
   background-color: rgba(0 0 0/30%);
   transition: 1s ease;
+}
+.onLikes {
+  background-color: yellowgreen;
+  color: black;
+  border: none;
+  border-radius: 1rem;
+}
+.onDisLikes {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 1rem;
 }
 .comment_dropdown {
   position: relative;

@@ -24,7 +24,7 @@ export default function Laliga() {
             <div
               className="main_league"
               onClick={() => {
-                navigate("/detail/Laliga" + i + "", { state: { LaligaId: "Laliga" } });
+                navigate("/detail/Laliga" + i + "", { state: { LaligaId: "Laliga", LaligaUId: parseInt("200" + i) } });
               }}
             >
               <div className="epllist" key={data.id}>

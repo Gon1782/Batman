@@ -15,7 +15,10 @@ const Match = () => {
   const LaligaId = location.state.LaligaId;
   const SerieAId = location.state.SerieAId;
   const EPLUId = location.state.EPLUId;
+  const LaligaUId = location.state.LaligaUId;
+  const SerieAUId = location.state.SerieAUId;
   const [leagueUID, setLeagueUID] = useState(0);
+  console.log(path);
   console.log(EPLUId);
   console.log("100" + 1);
 
@@ -40,7 +43,7 @@ const Match = () => {
   const navigate = useNavigate();
 
   const [matchdatas, setMatchdatas] = useState([]);
-  const matchData = matchdatas.filter((data) => data.id === EPLUId).map((data) => <div key={data.id}>{data.home}</div>);
+  const matchData = matchdatas.filter((data) => data.id === 1000).map((data) => <div key={data.id}>{data.home}</div>);
 
   // const { isLoading, error, data } = useQuery(["info"], async () => await axios.get("http://localhost:3001/" + { uid } + "").then((res) => res.data));
   // if (isLoading) return <p>Loading...</p>;

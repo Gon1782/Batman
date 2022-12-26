@@ -46,8 +46,8 @@ const Commentform = () => {
       password: "",
       comment: "",
       date: "",
-      like: 0,
-      dislike: 0,
+      likes: 0,
+      dislikes: 0,
     });
   };
 

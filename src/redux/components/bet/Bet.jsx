@@ -1,18 +1,23 @@
 import React from "react";
-import { useMutation, useQuery, useQueryClient } from 'react-query';
+import { useMutation, useQuery, useQueryClient } from "react-query";
 import "./bet.css";
 import Man_City from "../../../assets/img/Man_City.png";
 import Liverpool from "../../../assets/img/Liverpool.png";
 import draw from "../../../assets/img/DRAW.png";
-import { changeBet, getBets } from '../../../api/api';
+import { changeBet, getBets } from "../../../api/api";
+import { useDispatch, useSelector } from 'react-redux';
+import { betOff, betOn } from '../../modules/betSlice';
 
 const Bet = () => {
   const queryClient = useQueryClient();
-
+  const dispatch = useDispatch();
+  const bet = useSelector((state) => state.bet)
+  let betCheck = bet.filter(x => x.isBet === true).length
+  
   const changeMutation = useMutation(changeBet, {
     onSuccess: () => {
-      queryClient.invalidateQueries("bets")
-    }
+      queryClient.invalidateQueries("bets");
+    },
   });
 
   const { isLoading, isError, data, error } = useQuery("bets", getBets, {
@@ -28,21 +33,21 @@ const Bet = () => {
     return <span>Error: {error.message}</span>;
   }
 
-  let money = data.map(x => x.betMoney)
-  let homeOdd = ((money[1] + money[2]) / (money[0]/100) + 100)/100
-  let drawOdd = ((money[0] + money[2]) / (money[1]/100) + 100)/100
-  let awayOdd = ((money[0] + money[1]) / (money[2]/100) + 100)/100
+  let money = data.map((x) => x.betMoney);
+  let homeOdd = ((money[1] + money[2]) / (money[0] / 100) + 100) / 100;
+  let drawOdd = ((money[0] + money[2]) / (money[1] / 100) + 100) / 100;
+  let awayOdd = ((money[0] + money[1]) / (money[2] / 100) + 100) / 100;
 
-  let betOnlyOne = data.filter(x => x.isBet === true)
-  let betId = betOnlyOne.map(x => x.id)[0]
-  let bettingMoney = betOnlyOne.map(x => x.betMoney)[0]
-  let onBetting = betOnlyOne.map(x => x.isBet)[0]
-
-  const betHandler = (id ,onBet) => {
-    !onBet ? changeBet(id, {betMoney: money[id-1] + 100, isBet: !onBet}) : changeBet(id, {betMoney: money[id-1] - 100, isBet: !onBet}) 
-    if (betOnlyOne.length !== 0) changeBet(betId, {betMoney: bettingMoney, isBet: !onBetting})
-    changeMutation.mutate(id) 
-  }
+  const betHandler = (id, onBet) => {
+    if(!onBet) {
+      dispatch(betOn(id));
+      changeBet(id, { betMoney: money[id - 1] + 100}) 
+     } else {
+      dispatch(betOff(id))
+      changeBet(id, { betMoney: money[id - 1] - 100});
+     } 
+    changeMutation.mutate(id);
+  };
 
   const lists = [
     {
@@ -72,15 +77,28 @@ const Bet = () => {
     <div className="bet_layout">
       <div className="bet_body">
         {lists.map((x) => {
-          let team = data.filter(a => a.id === x.id)[0]
-          let onBet = team.isBet
-          let id = team.id
+          let list = data.filter((a) => a.id === x.id);
+          let team = list[0];
+          let id = team.id;
+          let Bet = bet[id-1]
+          let labelClass = ""
+          let btnClass = ""
+          if (Bet.id === id && betCheck > 0) {
+            labelClass = "bet_disabled"
+            btnClass = "bet_to_disabled"
+          } else {
+            labelClass = "bet"
+            btnClass = "bet_to"
+          }
           return (
-            <label className={ onBet ? "bet on" : "bet"} key={x.homeAndAway}>
-              <button className={ onBet ? "bet_on" : "bet_to"} onClick={() => betHandler(id, onBet)}>
+            <label className={Bet.isBet ? "bet on" : labelClass} key={x.homeAndAway}>
+              <button className={Bet.isBet ? "bet_on" : btnClass} onClick={() => betHandler(id, Bet.isBet)} disabled={!Bet.isBet && betCheck > 0 ? "disabled": ""}>
                 <img src={x.img} alt="" width="150px" height="150px" />
               </button>
-              <div className="bet_btn">{x.odd.toFixed(2)}</div>
+              <div className="bet_btn">
+                <div>Bet: {team.betMoney}</div>
+                <div>{x.odd.toFixed(2)} X</div>
+              </div>
             </label>
           );
         })}

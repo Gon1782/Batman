@@ -24,7 +24,7 @@ export default function SerieA() {
             <div
               className="main_league"
               onClick={() => {
-                navigate("/detail/SerieA" + i + "", { state: { SerieAId: "SerieA" } });
+                navigate("/detail/SerieA" + i + "", { state: { SerieAId: "SerieA", SerieAUId: parseInt("300" + i) } });
               }}
             >
               <div className="epllist" key={data.id}>
