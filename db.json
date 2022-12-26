@@ -256,8 +256,8 @@
       "password": "test123",
       "comment": "테스트테스트테스트테스트테스트",
       "date": "2022.12.26 05:28",
-      "likes": 12,
-      "dislikes": 10
+      "likes": 13,
+      "dislikes": 11
     }
   ],
   "bets": [
@@ -276,8 +276,5 @@
       "homeAndAway": "Away",
       "betMoney": 5800
     }
-    
-    
-]
-
+  ]
 }
