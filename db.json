@@ -14,7 +14,7 @@
       "home": "브라이턴",
       "homeimg": "https://blog.kakaocdn.net/dn/GyBKz/btqEbtSfbBN/1y3Sg38N7yb9kITbElwua1/img.png",
       "away": "아스날",
-      "awayimg": "https://blog.kakaocdn.net/dn/dfdza0/btqD9u4yxr2/zMiJQjhtw8dvWfpltl0u3k/img.png",
+      "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
       "time": "01.01 12:00"
     },
     {
@@ -43,7 +43,7 @@
     {
       "id": 1201,
       "name": "맨 시티",
-      "img": "https://cdn.011st.com/11dims/resize/600x600/quality/75/11src/product/1953831101/B.jpg?711000000"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png"
     },
     {
       "id": 1202,
@@ -264,19 +264,19 @@
     {
       "id": 1,
       "homeAndAway": "Home",
-      "betMoney": 2000,
+      "betMoney": 2100,
       "isBet": false
     },
     {
       "id": 2,
       "homeAndAway": "Draw",
-      "betMoney": 700,
+      "betMoney": 800,
       "isBet": false
     },
     {
       "id": 3,
       "homeAndAway": "Away",
-      "betMoney": 700,
+      "betMoney": 800,
       "isBet": true
     }
   ]
