@@ -1,8 +1,16 @@
+@font-face {
+  font-family: 'KOTRALEAP';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRALEAP.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  background-color: #c0c0c0;
+  background-color: #838282;
 }
 
 .detail_layout {
+  font-family: "KOTRALEAP";
   display: grid;
   justify-items: center;
   width: 100vw;

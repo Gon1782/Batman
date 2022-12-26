@@ -34,9 +34,9 @@ const Bet = () => {
   }
 
   let money = data.map((x) => x.betMoney);
-  let homeOdd = ((money[1] + money[2]) / (money[0] / 100) + 100) / 100;
-  let drawOdd = ((money[0] + money[2]) / (money[1] / 100) + 100) / 100;
-  let awayOdd = ((money[0] + money[1]) / (money[2] / 100) + 100) / 100;
+  let homeOdd = Math.floor((money[1] + money[2]) / (money[0] / 100) + 100)
+  let drawOdd = Math.floor((money[0] + money[2]) / (money[1] / 100) + 100)
+  let awayOdd = Math.floor((money[0] + money[1]) / (money[2] / 100) + 100)
   let homePercent = Math.round((money[0] / money.reduce((a, b) => a + b)) * 100);
   let drawPercent = Math.round((money[1] / money.reduce((a, b) => a + b)) * 100);
   let awayPercent = Math.round((money[2] / money.reduce((a, b) => a + b)) * 100);
@@ -102,8 +102,8 @@ const Bet = () => {
                 <img src={x.img} alt="" width="150px" height="150px" />
               </button>
               <div className="bet_btn">
-                <div>Bet: {team.betMoney}</div>
-                <div>{x.odd.toFixed(2)} X</div>
+                <div>Bet: {team.betMoney} P</div>
+                <div>예상 포인트: {x.odd} P</div>
                 <div>{x.percent}%</div>
               </div>
             </label>

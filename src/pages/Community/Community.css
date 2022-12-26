@@ -1,7 +1,9 @@
 .divCommunity {
+  box-shadow: 10px 8px rgb(0 0 0 / 60%);
   background-color: rgba(235, 225, 225, 0.8);
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/892/8/929/batman-logo-black-batman-wallpaper-preview.jpg);
   border-radius: 15px;
-  padding: 60px;
+  padding: 20px;
   width: 60%;
   margin: auto;
   margin-top: 60px;
@@ -12,6 +14,7 @@
 }
 
 .divTitle {
+  color: white;
   width: 80%;
   font-weight: bold;
   font-size: 20px;
@@ -21,6 +24,7 @@
 }
 
 .divContents {
+  color: white;
   width: 70%;
   font-weight: bold;
   font-size: 20px;
