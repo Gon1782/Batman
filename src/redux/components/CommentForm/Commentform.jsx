@@ -35,11 +35,27 @@ const Commentform = () => {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    if (comment.writer.trim() === "" || comment.comment.trim() === "" || comment.password.trim() === "") {
-      alert("작성자 댓글내용 비밀번호를 입력해 주세요");
+    if (comment.writer.trim() === "" || comment.password.trim() === "") {
+      alert("이름과 비밀번호를 설정해 주세요");
       return;
     }
-    commentMutation.mutate({ ...comment, date: `${year}.${month}.${day} ${hour > 10 ? hour : "0"+hour}:${minute}` });
+    if (comment.writer.length > 10) {
+      alert("이름이 너무 길어요\n이름은 10글자까지만 설정해주세요")
+      return;
+    }
+    if (comment.password.length > 10) {
+      alert("비밀번호가 너무 길어요\n비밀번호는 14글자까지만 설정해주세요")
+      return;
+    }
+    if (comment.comment.trim() === "") {
+      alert("내용을 입력해주세요")
+      return;
+    }
+    if (comment.comment.length > 80) {
+      alert("내용이 너무 길어요\n내용은 80글자까지만 작성해주세요")
+      return;
+    }
+    commentMutation.mutate({ ...comment, date: `${year}.${month}.${day} ${hour > 9 ? hour : "0"+hour}:${minute > 9 ? minute : "0"+minute}` });
     setComment({
       id: 0,
       writer: "",

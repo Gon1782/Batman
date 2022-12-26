@@ -254,17 +254,17 @@
       "id": 10,
       "writer": "테스트 ",
       "password": "test123",
-      "comment": "테스트테스트테스트테스트",
+      "comment": "테스트테스트테스트테스트테스트",
       "date": "2022.12.26 05:28",
-      "likes": 11,
-      "dislikes": 9
+      "likes": 12,
+      "dislikes": 10
     }
   ],
   "bets": [
     {
       "id": 1,
       "homeAndAway": "Home",
-      "betMoney": 19000
+      "betMoney": 19100
     },
     {
       "id": 2,
@@ -274,7 +274,7 @@
     {
       "id": 3,
       "homeAndAway": "Away",
-      "betMoney": 5700
+      "betMoney": 5800
     }
   ]
 }
