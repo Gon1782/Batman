@@ -2,7 +2,7 @@
   "EPL": [
     {
       "id": 1000,
-      "title": "premier League",
+      "title": "Premier League",
       "home": "리버풀",
       "homeimg": "https://upload.wikimedia.org/wikipedia/ko/thumb/0/05/%EB%A6%AC%EB%B2%84%ED%92%80_FC_%EB%A1%9C%EA%B3%A0.svg/1200px-%EB%A6%AC%EB%B2%84%ED%92%80_FC_%EB%A1%9C%EA%B3%A0.svg.png",
       "away": "레스터",
@@ -292,20 +292,20 @@
     {
       "id": 1,
       "homeAndAway": "Home",
-      "betMoney": 2000,
-      "isBet": false
+      "betMoney": 2100,
+      "isBet": true
     },
     {
       "id": 2,
       "homeAndAway": "Draw",
-      "betMoney": 700,
+      "betMoney": 800,
       "isBet": false
     },
     {
       "id": 3,
       "homeAndAway": "Away",
       "betMoney": 700,
-      "isBet": true
+      "isBet": false
     }
   ]
 }
