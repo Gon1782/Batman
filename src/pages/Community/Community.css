@@ -1,5 +1,5 @@
 .divCommunity {
-  background-color: #ffdcdc;
+  background-color: rgba(235, 225, 225, 0.8);
   border-radius: 15px;
   padding: 60px;
   width: 60%;
@@ -21,12 +21,13 @@
 }
 
 .divContents {
-  width: 90%;
+  width: 70%;
   font-weight: bold;
   font-size: 20px;
   border: none;
   padding: 20px;
   background-color: transparent;
+  margin-left: 10px;
 }
 
 .wrap {
@@ -43,9 +44,39 @@
   border: none;
   cursor: pointer;
   border-radius: 50px;
-  background-color: #b4b4b4;
+  background-color: rgba(194, 190, 190, 0.8);
 }
 
 .community-Btn:hover {
+  border: 3px solid black;
+}
+
+.CompleteBtn > button {
+  width: 80px;
+  border: none;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: rgba(194, 190, 190, 0.8);
+  margin-left: 60px;
+}
+
+.CancelBtn > button {
+  width: 80px;
+  border: none;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: rgba(194, 190, 190, 0.8);
+  margin-left: 10px;
+}
+
+.CompleteBtn > button:hover {
+  border: 3px solid black;
+}
+
+.CancelBtn > button:hover {
   border: 3px solid black;
 }
