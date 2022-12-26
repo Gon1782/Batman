@@ -2,7 +2,7 @@
   "EPL": [
     {
       "id": 1000,
-      "title": "premier League",
+      "title": "Premier League",
       "home": "리버풀",
       "homeimg": "https://upload.wikimedia.org/wikipedia/ko/thumb/0/05/%EB%A6%AC%EB%B2%84%ED%92%80_FC_%EB%A1%9C%EA%B3%A0.svg/1200px-%EB%A6%AC%EB%B2%84%ED%92%80_FC_%EB%A1%9C%EA%B3%A0.svg.png",
       "away": "레스터",
@@ -256,8 +256,19 @@
       "password": "test123",
       "comment": "테스트테스트테스트테스트테스트",
       "date": "2022.12.26 05:28",
-      "likes": 12,
-      "dislikes": 10
+      "likes": 13,
+      "dislikes": 11
+    },
+    {
+      "id": 11,
+      "writer": "ㄴㄴㄴ",
+      "password": "1234",
+      "comment": "내가 누구게",
+      "date": "2022.12.26 09:42",
+      "like": 0,
+      "dislike": 0,
+      "likes": null,
+      "dislikes": null
     }
   ],
   "bets": [

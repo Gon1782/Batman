@@ -13,18 +13,6 @@
 
   font-size: 1.8rem;
   font-weight: 600;
-}
 
-.news_main {
-  height: 50%;
-}
-
-.news_img {
-  height: 100%;
-}
-.news_img img {
-  width: 100%;
-  height: 100%;
-
-  border-radius: 15px;
+  margin-bottom: 3%;
 }
