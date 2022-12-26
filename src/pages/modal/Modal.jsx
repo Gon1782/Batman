@@ -5,6 +5,7 @@ import "./Modal.css";
 import { addCommunity } from "../../redux/modules/community";
 
 export default function Modal({ setModal }) {
+  console.log(setModal);
   const closeModal = () => {
     setModal(false);
   };

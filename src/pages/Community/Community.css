@@ -15,12 +15,18 @@
   width: 80%;
   font-weight: bold;
   font-size: 20px;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
 }
 
 .divContents {
   width: 90%;
   font-weight: bold;
   font-size: 20px;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
 }
 
 .wrap {
