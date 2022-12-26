@@ -281,8 +281,9 @@
       "comment": "asdfasdfasf",
       "date": "2022.12.24 03:14",
       "like": 0,
-      "dislike": 0,
-
+      "dislike": 0
+    },
+    {
       "id": 10,
       "writer": "테스트 ",
       "password": "test123",
