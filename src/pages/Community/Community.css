@@ -1,0 +1,82 @@
+.divCommunity {
+  background-color: rgba(235, 225, 225, 0.8);
+  border-radius: 15px;
+  padding: 60px;
+  width: 60%;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.divTitle {
+  width: 80%;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.divContents {
+  width: 70%;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.wrap {
+  position: relative;
+}
+
+.community-Btn {
+  position: absolute;
+  right: 110px;
+  top: 10px;
+  width: 100px;
+  height: 50px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: rgba(194, 190, 190, 0.8);
+}
+
+.community-Btn:hover {
+  border: 3px solid black;
+}
+
+.CompleteBtn > button {
+  width: 80px;
+  border: none;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: rgba(194, 190, 190, 0.8);
+  margin-left: 60px;
+}
+
+.CancelBtn > button {
+  width: 80px;
+  border: none;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: rgba(194, 190, 190, 0.8);
+  margin-left: 10px;
+}
+
+.CompleteBtn > button:hover {
+  border: 3px solid black;
+}
+
+.CancelBtn > button:hover {
+  border: 3px solid black;
+}
