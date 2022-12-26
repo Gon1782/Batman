@@ -1,0 +1,18 @@
+.news_body {
+  width: 80%;
+  height: 40vh;
+  border-radius: 15px;
+
+  margin-top: 9vh;
+}
+
+.news_title {
+  height: 13%;
+  display: flex;
+  align-items: center;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  margin-bottom: 3%;
+}
