@@ -7,12 +7,13 @@
   padding: 10px;
   margin-top: auto;
   font-size: 1.3rem;
+  z-index: 999;
 }
 
 .footer_title {
   margin-bottom: 3%;
   padding: 2px;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .footer_telphone {
