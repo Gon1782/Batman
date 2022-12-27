@@ -28,6 +28,7 @@ export default function EplLanking() {
       <div className='ranking_list_title'>Top Lanking</div>
       {rank.map((data) => (
         <div className='rank_list' key={data.id}>
+          <div className='rank_num'>{data.num}</div>
           <div className='list_logo'>
             <div>
               <img src={data.img} alt='img' />
