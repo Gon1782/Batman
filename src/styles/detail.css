@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+:root {
+  --color-text: rgb(0, 0, 0);
+  --color-gray: rgb(82, 82, 82);
+  --color-dark: rgb(255, 255, 255);
+  --color-border: rgba(0 0 0/10%);
+  --color-bg-white: rgb(255, 255, 255);
+  --color-bg-darkmMode: rgb(255, 255, 255);
+  --color-bg-bet: rgba(0 0 0/10%);
+  --color-bg-betOn: gray;
+  --color-bg-dark: rgb(0, 0, 0); 
+}
+
+html.dark {
+  --color-text: rgb(255, 255, 255);
+  --color-gray: rgb(255, 255, 255);
+  --color-dark: rgb(0, 0, 0);
+  --color-border: rgba(255 255 255/10%);
+  --color-bg-white: rgb(29, 29, 29);
+  --color-bg-darkmMode: rgb(0, 0, 0);
+  --color-bg-bet: rgba(255 255 255/30%);
+  --color-bg-betOn: white;
+  --color-bg-dark: rgb(255, 255, 255)
+}
+body {
+  background-color: var(--color-bg-darkmMode);
+}
+
+.detail_layout {
+  font-family: 'Titillium Web', sans-serif;
+  display: grid;
+  justify-items: center;
+  width: 100vw;
+  max-width: 1280px;
+  height: 90%;
+  margin: auto;
+}

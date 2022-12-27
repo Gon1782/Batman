@@ -1,0 +1,46 @@
+.Topleagues_body {
+  width: 20%;
+  height: 100vh;
+
+  margin-left: 2%;
+}
+.Topleagues_title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+
+  margin-bottom: 15%;
+
+  color: var(--color-text);
+}
+
+.Topleagues_list {
+  width: 80%;
+  height: 5vh;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+
+  cursor: pointer;
+  margin-bottom: 5%;
+  padding: 1.5%;
+
+  background-color: var(--color-bg-white);
+  color: var(--color-gray);
+  border-radius: 15px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12), 0 3px 2px rgba(0, 0, 0, 0.24);
+
+  display: flex;
+  align-items: center;
+}
+.Topleagues_list img {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin-right: 3%;
+  margin-left: 5%;
+}
+
+.Topleagues_list:hover {
+  transform: scale(1.05);
+}

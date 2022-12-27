@@ -1,0 +1,52 @@
+.header {
+  background-color: #1d1d1d;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.mainlogo {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.inputsize {
+  border-radius: 12px;
+  height: 30px;
+  text-align: center;
+}
+
+.navi {
+  cursor: pointer;
+}
+
+.header_community {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* 다크모드 */
+
+.dark_mode_body {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.dark_mode {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  transition: all 150ms ease-out;
+
+  margin-right: 20%;
+  font-size: 35px;
+}

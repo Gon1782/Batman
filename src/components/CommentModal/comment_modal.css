@@ -1,0 +1,30 @@
+.modal_container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background-color: rgba(0 0 0/60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal_box {
+    width: 500px;
+    height: 250px;
+    color: var(--color-text);
+    background-color: var(--color-bg-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 1rem;
+}
+
+.modal_btn {
+    display: flex;
+    gap: 1rem;
+}

@@ -1,0 +1,192 @@
+.divCommunity {
+  box-shadow: 10px 8px rgb(0 0 0 / 60%);
+  background-color: rgba(235, 225, 225, 0.8);
+  background-image: url(https://p4.wallpaperbetter.com/wallpaper/892/8/929/batman-logo-black-batman-wallpaper-preview.jpg);
+  border-radius: 15px;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.divTitle {
+  color: white;
+  width: 80%;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
+}
+
+.divContents {
+  color: white;
+  width: 70%;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.wrap {
+  position: relative;
+}
+
+.community_btn_box {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  margin-top: 30px;
+}
+
+.community-Btn {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  border: unset;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  background-color: rgb(150, 146, 144);
+  color: white;
+}
+
+.community-Btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: -1;
+  transition: all 0.5s ease;
+  border-radius: 50px;
+}
+
+.community-Btn:hover::before {
+  background-color: rgb(243, 135, 73);
+  border-radius: 50px;
+}
+
+.community-Btn:hover {
+  box-shadow: 0 0 30px 2px rgb(245, 121, 38);
+  border-radius: 50px;
+}
+
+.CompleteBtn > button {
+  /* width: 80px;
+  border: none;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: rgba(194, 190, 190, 0.8);
+  margin-left: 60px; */
+  cursor: pointer;
+  width: 80px;
+  padding: 20px;
+  font-size: 13px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-left: 60px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  transition: 0.4s;
+}
+
+.CancelBtn > button {
+  /* width: 80px;
+  border: none;
+  padding: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  background-color: rgba(194, 190, 190, 0.8);
+  margin-left: 10px; */
+  cursor: pointer;
+  width: 80px;
+  padding: 20px;
+  font-size: 13px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-left: 60px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  transition: 0.4s;
+  margin-left: 10px;
+}
+
+.CompleteBtn > button:hover {
+  z-index: 1;
+  border-color: transparent;
+  background: linear-gradient(90deg, #a9a9a9, #00a19d, #0c87b7, #cb49ff, #6a5acd, #483d8b);
+  background-size: 400%;
+  box-shadow: 0 0 15px rgb(2, 4, 24);
+  animation: glow 12s linear forwards;
+}
+
+@keyframes glow {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 400%;
+  }
+}
+
+.CancelBtn > button:hover {
+  z-index: 1;
+  border-color: transparent;
+  background: linear-gradient(90deg, #a9a9a9, #00a19d, #0c87b7, #cb49ff, #6a5acd, #483d8b);
+  background-size: 400%;
+  box-shadow: 0 0 15px rgb(2, 4, 24);
+  animation: glow 12s linear forwards;
+}
+
+.CompleteBtn > button::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: 1px;
+  left: -1px;
+  filter: blur(36px);
+  z-index: -1;
+  opacity: 0;
+  transition: -4s ease-out;
+}
+
+.CompleteBtn > button:hover::before {
+  opacity: 1;
+  z-index: -1;
+}
+
+.CancelBtn > button::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: 1px;
+  left: -1px;
+  filter: blur(36px);
+  z-index: -1;
+  opacity: 0;
+  transition: -4s ease-out;
+}
+
+.CancelBtn > button:hover::before {
+  opacity: 1;
+  z-index: -1;
+}

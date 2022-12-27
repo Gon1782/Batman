@@ -1,0 +1,94 @@
+/* EPL 정보 */
+
+.information {
+  width: 55%;
+  margin-left: 1.5%;
+}
+
+.main_league_title {
+  text-align: center;
+
+  font-size: 3.7rem;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+
+  margin-bottom: 5%;
+
+  color: var(--color-text);
+}
+
+.main_league {
+  width: 94%;
+  height: 6vw;
+
+  display: flex;
+  justify-content: center;
+
+  border-radius: 30px;
+  box-shadow: 0 8px 3px rgba(0, 0, 0, 0.12), 0 4px 14px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+.main_league:hover {
+  transform: scale(1.03);
+}
+
+.epllist {
+  width: 100%;
+  background-color: var(--color-bg-white);
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+}
+
+.home,
+.away {
+  width: 27%;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: 'Titillium Web', sans-serif;
+  color: var(--color-text);
+}
+
+.home {
+  justify-content: flex-end;
+}
+
+.game_time {
+  width: 46%;
+  color: var(--color-gray);
+
+  font-size: 1.4rem;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 6%;
+}
+
+.game_time img {
+  width: 4.3rem;
+  height: 4.3rem;
+}
+
+/* 라리가 */
+.Laliga_page_body {
+  display: flex;
+  margin-top: 3%;
+}
+/* 세리에 A*/
+.SerieA_page_body {
+  display: flex;
+  margin-top: 3%;
+}
