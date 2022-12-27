@@ -1,14 +1,13 @@
-import "./Footer.css";
+import './Footer.css';
 
 function Footer() {
   return (
-    <div className="footer">
+    <div className='footer'>
       <div>
-        상호명 : (주)batman
-        <br />
-        회사위치 : 고담시 <br />
+        <div className='footer_title'>상호명 : (주) batman</div>
+        <div>회사위치 : 고담시 </div>
       </div>
-      <h4>TEL.1336</h4>
+      <div className='footer_telphone'>TEL.1336</div>
     </div>
   );
 }

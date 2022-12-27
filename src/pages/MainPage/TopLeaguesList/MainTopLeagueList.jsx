@@ -10,12 +10,12 @@ export default function MainTopLeagueList() {
   const navigate = useNavigate();
 
   return (
-    <div className='list'>
+    <div className='Topleagues_body'>
       <div>
-        <div className='Topleagues'>Top leagues</div>
+        <div className='Topleagues_title'>Top leagues</div>
         <div>
           <div
-            className='Epl'
+            className='Topleagues_list'
             onClick={() => {
               navigate('/');
             }}
@@ -24,7 +24,7 @@ export default function MainTopLeagueList() {
             {topLeaguesLists[0]}
           </div>
           <div
-            className='Laliga'
+            className='Topleagues_list'
             onClick={() => {
               navigate('/Laliga');
             }}
@@ -33,7 +33,7 @@ export default function MainTopLeagueList() {
             {topLeaguesLists[1]}
           </div>
           <div
-            className='SerieA'
+            className='Topleagues_list'
             onClick={() => {
               navigate('/SerieA');
             }}

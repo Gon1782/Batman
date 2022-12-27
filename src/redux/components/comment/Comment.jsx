@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useQuery, useQueryClient, useMutation } from "react-query";
 import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
 import { changeComment, getComments } from "../../../api/api";
 import { clickDislike, clickLike, hideEditBtn } from "../../modules/commentsSlice";
 import { hideDropdown, showDropdown } from "../../modules/dropdownSlice";
@@ -19,6 +20,7 @@ const Comment = () => {
   const like = useSelector((state) => state.comments.like);
   const dislike = useSelector((state) => state.comments.dislike);
   const node = useRef();
+  const { path } = useParams();
 
   const changeMutation = useMutation(changeComment, {
     onSuccess: () => {
@@ -60,7 +62,7 @@ const Comment = () => {
   const onEditHandler = (id, edit) => {
     changeComment(id, edit);
     changeMutation.mutate(id);
-    dispatch(hideEditBtn(id))
+    dispatch(hideEditBtn(id));
   };
 
   //좋아요, 싫어요
@@ -99,50 +101,52 @@ const Comment = () => {
       <Commentform />
       {/* 코멘트 리스트 */}
       <div className="comment_list">
-        {data.map((x) => {
-          return (
-            <div className="comment_box" key={x.id}>
-              <div className="comment_body">
-                <div className="comment_textbox">
-                  <div className="writer">{x.writer}</div>
-                  <div className="comment_contents">
-                    <div className={`comment${editBtn.id === x.id && editBtn.onEdit ? " hide" : ""}`}>{x.comment}</div>
-                    <div className={`comment_edit${editBtn.id === x.id && editBtn.onEdit ? "" : " hide"}`}>
-                      <input type="text" name="comment" className="comment_edit_input" onChange={onChange} defaultValue={x.comment} />
-                      <button className="comment_edit_btn" onClick={() => onEditHandler(x.id, { comment: content })}>
-                        수정하기
+        {data
+          .filter((x) => x.param === path)
+          .map((x) => {
+            return (
+              <div className="comment_box" key={x.id}>
+                <div className="comment_body">
+                  <div className="comment_textbox">
+                    <div className="writer">{x.writer}</div>
+                    <div className="comment_contents">
+                      <div className={`comment${editBtn.id === x.id && editBtn.onEdit ? " hide" : ""}`}>{x.comment}</div>
+                      <div className={`comment_edit${editBtn.id === x.id && editBtn.onEdit ? "" : " hide"}`}>
+                        <input type="text" name="comment" className="comment_edit_input" onChange={onChange} defaultValue={x.comment} />
+                        <button className="comment_edit_btn" onClick={() => onEditHandler(x.id, { comment: content })}>
+                          수정하기
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="comment_dropdown">
+                    <button className="btn_dropdown" onClick={() => toggleDropdownHandler(x.id)}>
+                      ...
+                    </button>
+                    <div className={dropDown.id === x.id && dropDown.show ? "btn_wrap" : "btn_wrap_hide"}>
+                      <button className="edit_btn" onClick={() => showModalHandler(x.id, "edit")}>
+                        수정
+                      </button>
+                      <button className="edit_btn" onClick={() => showModalHandler(x.id, "delete")}>
+                        삭제
                       </button>
                     </div>
                   </div>
                 </div>
-                <div className="comment_dropdown">
-                  <button className="btn_dropdown" onClick={() => toggleDropdownHandler(x.id)}>
-                    ...
-                  </button>
-                  <div className={dropDown.id === x.id && dropDown.show ? "btn_wrap" : "btn_wrap_hide"}>
-                    <button className="edit_btn" onClick={() => showModalHandler(x.id, "edit")}>
-                      수정
+                <div className="comment_footer">
+                  <div>{x.date}</div>
+                  <div className="btn_box">
+                    <button className={like.id === x.id && like.isLiked ? "onLikes" : "comment_like"} onClick={() => likeHandler(x.id, x.likes)} disabled={like.id === x.id && like.isLiked ? "disabled" : ""}>
+                      ❤️ {x.likes}
                     </button>
-                    <button className="edit_btn" onClick={() => showModalHandler(x.id, "delete")}>
-                      삭제
+                    <button className={dislike.id === x.id && dislike.isDisLiked ? "onDisLikes" : "comment_like"} onClick={() => disLikeHandler(x.id, x.dislikes)} disabled={dislike.id === x.id && dislike.isDisLiked ? "disabled" : ""}>
+                      💔 {x.dislikes}
                     </button>
                   </div>
                 </div>
               </div>
-              <div className="comment_footer">
-                <div>{x.date}</div>
-                <div className="btn_box">
-                  <button className={like.id === x.id && like.isLiked ? "onLikes" : "comment_like"} onClick={() => likeHandler(x.id, x.likes)} disabled={like.id === x.id && like.isLiked ? "disabled" : ""}>
-                    ❤️ {x.likes}
-                  </button>
-                  <button className={dislike.id === x.id && dislike.isDisLiked ? "onDisLikes" : "comment_like"} onClick={() => disLikeHandler(x.id, x.dislikes)} disabled={dislike.id === x.id && dislike.isDisLiked ? "disabled" : ""}>
-                    💔 {x.dislikes}
-                  </button>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
     </div>
   );
