@@ -1,6 +1,6 @@
 .Ranking_body {
   width: 17%;
-  margin-left: 1%;
+  margin-left: 2%;
 }
 
 /* 헤더 */
@@ -74,6 +74,15 @@
 
 .rank_list:hover {
   transform: scale(1.04);
+}
+
+.rank_num {
+  margin-left: 4%;
+  margin-right: 6%;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text);
 }
 
 .rank_list img {
