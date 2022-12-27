@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 export default function Laliga() {
   const navigate = useNavigate();
 
-  const { isLoading, error, data } = useQuery(['information'], async () => await axios.get('http://localhost:3001/Laliga').then((res) => res.data));
+  const { isLoading, error, data } = useQuery(['information'], async () => await axios.get('https://available-dented-arrhinceratops.glitch.me/Laliga').then((res) => res.data));
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>error</p>;
 

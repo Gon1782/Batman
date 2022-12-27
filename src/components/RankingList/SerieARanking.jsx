@@ -4,12 +4,12 @@ import axios from 'axios';
 export default function LaligaRanking() {
   const [rankTitle, setRankTitle] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:3001/SerieA_RanKing_title').then((res) => setRankTitle(res.data));
+    axios.get('https://available-dented-arrhinceratops.glitch.me/SerieA_RanKing_title').then((res) => setRankTitle(res.data));
   }, []);
 
   const [rank, setRank] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:3001/SerieA_Ranking').then((res) => setRank(res.data));
+    axios.get('https://available-dented-arrhinceratops.glitch.me/SerieA_Ranking').then((res) => setRank(res.data));
   }, []);
 
   return (
