@@ -387,122 +387,12 @@
     {
       "id": 1,
       "param": "EPL0",
-      "writer": "작성자",
+      "writer": "콥등이",
       "password": "1234",
-      "comment": "가즈아!!!!!!!",
+      "comment": "리버풀 가즈아!!!!!!!!",
       "date": "2022.12.22 22:00",
       "likes": 32,
       "dislikes": 26
-    },
-    {
-      "id": 2,
-      "param": "EPL0",
-      "writer": "작성자",
-      "password": "1234",
-      "comment": "가즈아!!!!!!!v",
-      "date": "2022.12.22 22:22",
-      "likes": 32,
-      "dislikes": 26
-    },
-    {
-      "id": 3,
-      "param": "EPL0",
-      "writer": "작성자",
-      "password": "1234",
-      "comment": "가즈아!!!!!!!",
-      "date": "2022.12.22 22:30",
-      "likes": 34,
-      "dislikes": 28
-    },
-    {
-      "id": 4,
-      "param": "EPL0",
-      "writer": "작성자",
-      "password": "1234",
-      "comment": "가즈아!!!!!!!",
-      "date": "2022.12.22 22:58",
-      "likes": 36,
-      "dislikes": 30
-    },
-    {
-      "id": 5,
-      "param": "EPL0",
-      "writer": "작성자",
-      "password": "1234",
-      "comment": "가즈아!!!!!!!",
-      "date": "2022.12.22 23:10",
-      "likes": 33,
-      "dislikes": 27
-    },
-    {
-      "id": 6,
-      "param": "EPL0",
-      "writer": "작성자",
-      "password": "1234",
-      "comment": "가즈아!!!!!!!",
-      "date": "2022.12.22 23:30",
-      "likes": 32,
-      "dislikes": 26
-    },
-    {
-      "id": 7,
-      "param": "EPL0",
-      "writer": "작성자",
-      "password": "1234",
-      "comment": "가즈아!!!!!!!",
-      "date": "2022.12.22 23:40",
-      "likes": 36,
-      "dislikes": 30
-    },
-    {
-      "id": 10,
-      "param": "EPL0",
-      "writer": "테스트 ",
-      "password": "test123",
-      "comment": "테스트테스트테스트테스트테스트",
-      "date": "2022.12.26 05:28",
-      "likes": 17,
-      "dislikes": 15
-    },
-    {
-      "id": 11,
-      "param": "EPL0",
-      "writer": "ㄴㄴㄴ",
-      "password": "1234",
-      "comment": "내가 누구게",
-      "date": "2022.12.26 09:42",
-      "likes": 5,
-      "dislikes": 5
-    },
-    {
-      "id": 12,
-      "param": "EPL0",
-      "writer": "asefas",
-      "password": "efasefasef",
-      "comment": "asefasef",
-      "date": "2022.12.27 04:02",
-      "likes": 1,
-      "dislikes": 1
-    },
-    {
-      "id": 13,
-      "param": "EPL1",
-      "writer": "asgas",
-      "password": "egasegas",
-      "comment": "gasegasegasegasge",
-      "date": "2022.12.27 04:04",
-      "likes": 0,
-      "dislikes": 0
-    },
-    {
-      "id": 14,
-      "param": "SerieA1",
-      "writer": "sgaseg",
-      "password": "aasgaseg",
-      "comment": "asegasegaseg",
-      "date": "2022.12.27 04:04",
-      "likes": 0,
-      "dislikes": 0
     }
   ],
   "bets": [
