@@ -1,7 +1,7 @@
 import './Main_page.css';
-import eplLogo from '../../../assets/img/EPL_logo.png';
-import Laliga from '../../../assets/img/Laliga.png';
-import SerieA from '../../../assets/img/SerieA.png';
+import eplLogo from '../../assets/img/EPL_logo.png';
+import Laliga from '../../assets/img/Laliga.png';
+import SerieA from '../../assets/img/SerieA.png';
 import { useNavigate } from 'react-router-dom';
 import MainNews from '../MainNews/MainNews';
 
