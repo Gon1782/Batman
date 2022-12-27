@@ -50,7 +50,7 @@ export default function Modal({ setModal }) {
             <p className="simTitle">제목</p>
             <input onChange={handleTitleInputChange} value={title} type="text" className="title" />
             <p className="simContents">내용</p>
-            <input onChange={handleContentsInputChange} value={contents} type="text" className="contents" />
+            <textarea onChange={handleContentsInputChange} value={contents} className="contents" />
             <button className="simBtn">등록하기</button>
           </form>
         </div>

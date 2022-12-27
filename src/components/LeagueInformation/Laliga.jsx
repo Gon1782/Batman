@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
-import LaligaLanking from '../LankingList/LaligaLanking';
+import LaligaLanking from '../RankingList/LaligaRanking';
 import MainTopLeagueList from '../TopLeaguesList/MainTopLeagueList';
 import { useNavigate } from 'react-router-dom';
 

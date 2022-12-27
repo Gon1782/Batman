@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import MainTopLeagueList from '../TopLeaguesList/MainTopLeagueList';
-import SerieALanking from '../LankingList/SerieALanking';
+import SerieALanking from '../RankingList/SerieARanking';
 import { useNavigate } from 'react-router-dom';
 
 export default function SerieA() {

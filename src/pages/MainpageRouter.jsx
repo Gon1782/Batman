@@ -1,7 +1,7 @@
 import React from 'react';
 import Epl from '../components/LeagueInformation/Epl';
 import MainTopLeagueList from '../components/TopLeaguesList/MainTopLeagueList';
-import EplLanking from '../components/LankingList/EplLanking';
+import EplRanking from '../components/RankingList/EplRanking';
 
 export default function MainpageRouter() {
   const style = {
@@ -13,7 +13,7 @@ export default function MainpageRouter() {
     <div style={style}>
       <MainTopLeagueList />
       <Epl />
-      <EplLanking />
+      <EplRanking />
     </div>
   );
 }

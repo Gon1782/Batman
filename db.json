@@ -29,7 +29,7 @@
       "away": "Arsenal",
       "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
       "time": "2023 01.01 02:30",
-      "hour": "02:0",
+      "hour": "02:00",
       "homeplace": "American Express Community Stadium",
       "drawbet": 400,
       "homebet": 700,
@@ -87,7 +87,7 @@
       "awaybet": 700
     }
   ],
-  "EPL_LanKing_title": [
+  "EPL_RanKing_title": [
     {
       "id": 1100,
       "title": "Premier League",
@@ -95,7 +95,7 @@
       "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/47.png"
     }
   ],
-  "EPL_Lanking": [
+  "EPL_Ranking": [
     {
       "id": 1200,
       "name": "Arsenal",
@@ -214,9 +214,8 @@
       "homebet": 700,
       "awaybet": 700
     }
-    
   ],
-  "Laliga_LanKing_title": [
+  "Laliga_RanKing_title": [
     {
       "id": 2100,
       "title": "Laliga",
@@ -224,7 +223,7 @@
       "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/dark/87.png"
     }
   ],
-  "Laliga_Lanking": [
+  "Laliga_Ranking": [
     {
       "id": 2200,
       "name": "Barcelona",
@@ -309,7 +308,6 @@
       "homebet": 700,
       "awaybet": 700
     },
-   
     {
       "id": 3003,
       "league": "SerieA",
@@ -345,7 +343,7 @@
       "awaybet": 700
     }
   ],
-  "SerieA_LanKing_title": [
+  "SerieA_RanKing_title": [
     {
       "id": 3100,
       "title": "SerieA",
@@ -353,7 +351,7 @@
       "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/dark/55.png"
     }
   ],
-  "SerieA_Lanking": [
+  "SerieA_Ranking": [
     {
       "id": 3200,
       "name": "Napoli",
@@ -461,7 +459,7 @@
       "param": "EPL0",
       "writer": "테스트 ",
       "password": "test123",
-      "comment": "테스트테스트테스트테스트테스트테스트",
+      "comment": "테스트테스트테스트테스트테스트",
       "date": "2022.12.26 05:28",
       "likes": 17,
       "dislikes": 15
