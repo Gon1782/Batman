@@ -5,16 +5,16 @@ import SimpleImageSlider from 'react-simple-image-slider';
 export default function MainNews() {
   const images = [
     {
-      url: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjA3MzBfMzEg%2FMDAxNjU5MTM4MjExODI5.R6orXFxODj8iXjnM6uKgE3M6ZacpUHJu6KkvwR4pDn4g.YQorRgcq4USUGpvWTgs7tzqYE7_KiTMqTSISeiVB7CAg.PNG.xtaiji83%2F254.png&type=a340',
+      url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQA-VHw0O4c4ilEgXG5WMhQc37SL7pCYusOA&usqp=CAU',
     },
     {
-      url: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEwMDFfNzQg%2FMDAxNjY0NjE2NjU2MTY5.a3qUFgIFfuhTcJipp8BdrHUd_cpTv4X8dwKhY8pUhK4g.DZ_DIdHcmVKAJJ7Fkv_doUPauFN-opyCFo3f4TfZ2Fkg.JPEG.olengelight%2F%25C0%25CC%25B9%25CC%25C1%25F6_08-min.jpg&type=a340',
+      url: 'https://images.performgroup.com/di/library/omnisport/c/67/son-heung-min_1g65w756zbr0s1ue2gtxzrjvjh.jpg?t=-1719411756&w=640&h=360',
     },
     {
-      url: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEwMDhfMzQg%2FMDAxNjY1MjExMTQ0MjA0.-sOfWpID1y1rp4TcnIzt4M7RuSutQGYr8GRR-40k8Hkg.LYVdxfoebSiREQSXjhkEm11HxNP1x0eDO09wae4tdOQg.JPEG.psh6347%2Fh_57864258.jpg&type=a340',
+      url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO3SUbJ5nJsFeCQgfixfiEc6PWDhZi08pdFQ&usqp=CAU',
     },
     {
-      url: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjExMTJfMjA4%2FMDAxNjY4MjQwNzQwNjIy.AdrCWkCKOtflUDC1leC2LKCmFCX__cbHs6PlIbn3Kqwg.RC4crs3dfpkBPFNL1KrMq6bQHN832RgRPadFX5rxJbkg.JPEG.skjung114%2FScreenshot%25A3%25DF20221112%25A3%25AD170638.jpg&type=a340',
+      url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaje47kWmcovzMo-o7JzhchN3EZQ6J1wLlJw&usqp=CAU',
     },
   ];
   const style = {
@@ -28,7 +28,7 @@ export default function MainNews() {
     <div className='news_body'>
       <div className='news_title'>Trending photos</div>
       <div className='news_main'>
-        <SimpleImageSlider width={`21%`} height={`32%`} style={style} images={images} showBullets={true} showNavs={true} />
+        <SimpleImageSlider width={`21%`} height={`34%`} style={style} images={images} showBullets={true} showNavs={true} />
       </div>
     </div>
   );

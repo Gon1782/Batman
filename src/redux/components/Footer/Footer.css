@@ -1,8 +1,20 @@
 .footer {
-  background-color: #a3a29e;
+  background-color: #1d1d1d;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   margin-top: auto;
+  font-size: 1.3rem;
+}
+
+.footer_title {
+  margin-bottom: 3%;
+  padding: 2px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.footer_telphone {
+  font-size: 1.8rem;
 }
