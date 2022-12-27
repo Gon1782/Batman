@@ -1,13 +1,13 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
-import LaligaLanking from '../LankingList/LaligaLanking';
 import MainTopLeagueList from '../TopLeaguesList/MainTopLeagueList';
+import SerieALanking from '../../../pages/MainPage/LankingList/SerieALanking';
 import { useNavigate } from 'react-router-dom';
 
-export default function Laliga() {
+export default function SerieA() {
   const navigate = useNavigate();
 
-  const { isLoading, error, data } = useQuery(['information'], async () => await axios.get('http://localhost:3001/Laliga').then((res) => res.data));
+  const { isLoading, error, data } = useQuery(['information'], async () => await axios.get('http://localhost:3001/SerieA').then((res) => res.data));
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>error</p>;
 
@@ -24,7 +24,7 @@ export default function Laliga() {
             <div
               className='main_league'
               onClick={() => {
-                navigate('/detail/Laliga' + i + '', { state: { LaligaId: 'Laliga', LaligaUId: parseInt('200' + i) } });
+                navigate('/detail/SerieA' + i + '', { state: { SerieAId: 'SerieA', SerieAUId: parseInt('300' + i) } });
               }}
             >
               <div className='epllist' key={data.id}>
@@ -40,7 +40,7 @@ export default function Laliga() {
           </>
         ))}
       </div>
-      <LaligaLanking />
+      <SerieALanking />
     </div>
   );
 }

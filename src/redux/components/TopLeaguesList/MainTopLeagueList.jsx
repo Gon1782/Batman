@@ -3,7 +3,7 @@ import eplLogo from '../../../assets/img/EPL_logo.png';
 import Laliga from '../../../assets/img/Laliga.png';
 import SerieA from '../../../assets/img/SerieA.png';
 import { useNavigate } from 'react-router-dom';
-import MainNews from '../components/MainNews/MainNews';
+import MainNews from '../MainNews/MainNews';
 
 export default function MainTopLeagueList() {
   const topLeaguesLists = ['Premier League', 'Laliga', 'Serie A'];
