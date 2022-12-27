@@ -53,8 +53,7 @@ const Match = () => {
   const matchDatahour = matchdatas.filter((data) => data.id === LeagueUId(t)).map((data) => data.hour);
   const matchDatatime = matchdatas.filter((data) => data.id === LeagueUId(t)).map((data) => data.time);
   const matchDataplace = matchdatas.filter((data) => data.id === LeagueUId(t)).map((data) => data.homeplace);
-  console.log(matchDatahomeimg);
-  console.log(matchData);
+  
   useEffect(() => {
     axios
       .get('http://localhost:3001/' + LeagueId(t) + '')
