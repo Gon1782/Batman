@@ -7,7 +7,6 @@ export default function MainpageRouter() {
   const style = {
     display: 'flex',
     marginTop: '3%',
-    backgroundColor: '#C0C0C0',
   };
 
   return (

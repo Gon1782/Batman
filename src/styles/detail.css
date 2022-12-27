@@ -4,13 +4,27 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 
+:root {
+  --color-text: rgb(0, 0, 0);
+  --color-gray: rgb(82, 82, 82);
+  --color-bg-white: rgb(255, 255, 255);
+  --color-bg-darkmMode: rgb(255, 255, 255);
+}
+
+html.dark {
+  --color-text: rgb(255, 255, 255);
+  --color-gray: rgb(255, 255, 255);
+  --color-bg-white: rgb(29, 29, 29);
+  --color-bg-darkmMode: rgb(0, 0, 0);
+}
 body {
-  background-color: #838282;
+  background-color: var(--color-bg-darkmMode);
 }
 
 .detail_layout {
-  font-family: "KOTRALEAP";
+  font-family: 'KOTRALEAP';
   display: grid;
   justify-items: center;
   width: 100vw;
