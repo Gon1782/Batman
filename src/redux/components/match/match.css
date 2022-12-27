@@ -37,7 +37,7 @@
   font-weight: bold;
   border-bottom: 1px solid rgba(0 0 0/10%);
 }
-.home {
+.match_home {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -51,7 +51,7 @@
   gap: 0.5rem;
   font-size: 1.5rem;
 }
-.away {
+.match_away {
   display: flex;
   justify-content: start;
   align-items: center;

@@ -62,27 +62,32 @@
     {
       "id": 1200,
       "name": "Arsnel",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
+      "num": "1"
     },
     {
       "id": 1201,
       "name": "Manchester City",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
+      "num": "2"
     },
     {
       "id": 1202,
       "name": "Newcastle United",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png",
+      "num": "3"
     },
     {
       "id": 1203,
       "name": "Tottenham",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png",
+      "num": "4"
     },
     {
       "id": 1204,
       "name": "Manchester United",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png",
+      "num": "5"
     }
   ],
   "Laliga": [
@@ -109,7 +114,7 @@
       "nation": "SPA",
       "home": "Valencia",
       "homeimg": "https://images.fotmob.com/image_resources/logo/teamlogo/10267.png",
-      "away": "카디스",
+      "away": "Cadiz",
       "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8385.png",
       "time": "2023 01.07 05:00",
       "hour": "05:00",
@@ -142,27 +147,32 @@
     {
       "id": 2200,
       "name": "Barcelona",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png",
+      "num": "1"
     },
     {
       "id": 2201,
       "name": "Real Madrid",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png",
+      "num": "2"
     },
     {
       "id": 2202,
       "name": "Real Sociedad",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8560.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8560.png",
+      "num": "3"
     },
     {
       "id": 2203,
       "name": "Athletic Club",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8315.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8315.png",
+      "num": "4"
     },
     {
       "id": 2204,
       "name": "Atletico Madrid",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
+      "num": "5"
     }
   ],
   "SerieA": [
@@ -210,27 +220,32 @@
     {
       "id": 3200,
       "name": "Napoli",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9875.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9875.png",
+      "num": "1"
     },
     {
       "id": 3201,
       "name": "AC Milan",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png",
+      "num": "2"
     },
     {
       "id": 3202,
       "name": "Juventus",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png",
+      "num": "3"
     },
     {
       "id": 3203,
       "name": "Lazio",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8543.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8543.png",
+      "num": "4"
     },
     {
       "id": 3204,
       "name": "Inter",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png",
+      "num": "5"
     }
   ],
   "comments": [
