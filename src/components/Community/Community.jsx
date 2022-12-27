@@ -78,14 +78,16 @@ export default function Community() {
 
   return (
     <div className='wrap'>
-      <button
-        onClick={() => {
-          setModal(true);
-        }}
-        className='community-Btn'
-      >
-        작성하기
-      </button>
+      <div className='community_btn_box'>
+        <button
+          onClick={() => {
+            setModal(true);
+          }}
+          className='community-Btn'
+        >
+          작성하기
+        </button>
+      </div>
       {modal && <Modal setModal={setModal} />}
       <div>
         {data.map((item) => (

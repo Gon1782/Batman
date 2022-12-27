@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-export default function LaligaLanking() {
+export default function LaligaRanking() {
   const [rankTitle, setRankTitle] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:3001/SerieA_LanKing_title').then((res) => setRankTitle(res.data));
+    axios.get('https://available-dented-arrhinceratops.glitch.me/SerieA_RanKing_title').then((res) => setRankTitle(res.data));
   }, []);
 
   const [rank, setRank] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:3001/SerieA_Lanking').then((res) => setRank(res.data));
+    axios.get('https://available-dented-arrhinceratops.glitch.me/SerieA_Ranking').then((res) => setRank(res.data));
   }, []);
 
   return (
@@ -23,7 +23,7 @@ export default function LaligaLanking() {
           <img className='rank_logo' src={data.logo} alt='img' />
         </div>
       ))}
-      <div className='ranking_list_title'>Top Lanking</div>
+      <div className='ranking_list_title'>Top Ranking</div>
       {rank.map((data) => (
         <div className='rank_list' key={data.id}>
           <div className='rank_num'>{data.num}</div>

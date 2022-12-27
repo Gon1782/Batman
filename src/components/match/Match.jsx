@@ -56,7 +56,7 @@ const Match = () => {
   
   useEffect(() => {
     axios
-      .get('http://localhost:3001/' + LeagueId(t) + '')
+      .get('https://available-dented-arrhinceratops.glitch.me/' + LeagueId(t) + '')
       .then((res) => setMatchdatas(res.data))
       .catch((error) => {
         if (error.response) {
