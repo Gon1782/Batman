@@ -9,9 +9,9 @@
       "nation": "ENG",
       "home": "Liverpool",
       "homeimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
-      "homebet": 5500,
+      "homebet": 5600,
       "drawbet": 3000,
-      "awaybet": 1500,
+      "awaybet": 1400,
       "away": "Leicester",
       "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8197.png",
       "time": "2022 12.31 05:00",
@@ -31,9 +31,9 @@
       "time": "2023 01.01 02:30",
       "hour": "02:0",
       "homeplace": "American Express Community Stadium",
-      "drawbet": 2500,
+      "drawbet": 2300,
       "homebet": 3000,
-      "awaybet": 4500
+      "awaybet": 4000
     },
     {
       "id": 1002,
@@ -87,7 +87,7 @@
       "awaybet": 2500
     }
   ],
-  "EPL_LanKing_title": [
+  "EPL_RanKing_title": [
     {
       "id": 1100,
       "title": "Premier League",
@@ -95,7 +95,7 @@
       "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/47.png"
     }
   ],
-  "EPL_Lanking": [
+  "EPL_Ranking": [
     {
       "id": 1200,
       "name": "Arsenal",
@@ -215,7 +215,7 @@
       "awaybet": 3000
     }
   ],
-  "Laliga_LanKing_title": [
+  "Laliga_RanKing_title": [
     {
       "id": 2100,
       "title": "Laliga",
@@ -223,7 +223,7 @@
       "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/dark/87.png"
     }
   ],
-  "Laliga_Lanking": [
+  "Laliga_Ranking": [
     {
       "id": 2200,
       "name": "Barcelona",
@@ -343,7 +343,7 @@
       "awaybet": 2500
     }
   ],
-  "SerieA_LanKing_title": [
+  "SerieA_RanKing_title": [
     {
       "id": 3100,
       "title": "SerieA",
@@ -351,7 +351,7 @@
       "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/dark/55.png"
     }
   ],
-  "SerieA_Lanking": [
+  "SerieA_Ranking": [
     {
       "id": 3200,
       "name": "Napoli",
