@@ -23,7 +23,7 @@
   padding-bottom: 1rem;
   width: 100%;
   height: 50px;
-  border-bottom: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-border);
   background: var(--color-bg-white);
   z-index: 999;
 }
@@ -39,7 +39,7 @@
 }
 .writer_input {
   height: 1.5rem;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-border);
   border-radius: 1rem;
   padding-left: 10px;
   padding-right: 10px;
@@ -47,7 +47,7 @@
 }
 .password_input {
   height: 1.5rem;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-border);
   border-radius: 1rem;
   padding-left: 10px;
   padding-right: 10px;
@@ -56,20 +56,25 @@
 .comment_input {
   width: 40vw;
   height: 2rem;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-border);
   border-radius: 1rem;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 1rem;
 }
 .comment_btn {
-  color: black;
-  background-color: white;
+  color: var(--color-text);
+  background-color: var(--color-bg-white);
   width: 9rem;
   height: 3.875rem;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-border);
   border-radius: 1rem;
   cursor: pointer;
+}
+.comment_btn:hover {
+  color: var(--color-dark);
+  background: var(--color-bg-dark);
+  transition: 0.5s ease;
 }
 .comment_list {
   display: flex;
@@ -84,7 +89,7 @@
   justify-content: space-around;
   width: 70%;
   height: 6rem;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-border);
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
@@ -93,7 +98,7 @@
   height: 4rem;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-border);
 }
 .comment_textbox {
   display: flex;
@@ -134,7 +139,7 @@
 .comment_edit_input {
   width: 100%;
   height: 2rem;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-border);
   border-radius: 1rem;
   padding-left: 10px;
   padding-right: 10px;
@@ -145,13 +150,20 @@
   width: 20%;
   height: 2.3rem;
   border-radius: 1rem;
-  border: 1px solid var(--color-text);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
   background: var(--color-bg-white);
+}
+.comment_edit_btn:hover {
+  cursor: pointer;
+  color: var(--color-dark);
+  background-color: var(--color-bg-dark);
+  transition: 0.5s ease;
 }
 .comment_password_input {
   width: 60%;
   height: 2rem;
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-border);
   border-radius: 1rem;
   padding-left: 10px;
   padding-right: 10px;
@@ -171,7 +183,7 @@
   cursor: pointer;
 }
 .comment_like:hover {
-  background-color: rgba(0 0 0/30%);
+  background-color: var(--color-bg-bet);
   transition: 1s ease;
 }
 .onLikes {
@@ -213,11 +225,12 @@
   border-radius: 0.5rem;
   font-size: 1rem;
   background: var(--color-bg-white);
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-border);
   color: var(--color-text);
   z-index: 998;
 }
 .edit_btn:hover {
   color: var(--color-dark);
   background: var(--color-bg-dark);
+  transition: 0.5s ease;
 }

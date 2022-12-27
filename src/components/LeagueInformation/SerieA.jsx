@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useQuery } from 'react-query';
 import MainTopLeagueList from '../TopLeaguesList/MainTopLeagueList';
-import SerieALanking from '../LankingList/SerieALanking';
+import SerieALanking from '../RankingList/SerieARanking';
 import { useNavigate } from 'react-router-dom';
 
 export default function SerieA() {
@@ -16,8 +16,8 @@ export default function SerieA() {
       <MainTopLeagueList />
       <div className='information'>
         {data.map((data, i) => (
-          <>
-            <div className='main_league_title' key={data.id}>
+          <div key={data.id}>
+            <div className='main_league_title'>
               {data.title}
             </div>
 
@@ -27,7 +27,7 @@ export default function SerieA() {
                 navigate('/detail/SerieA' + i + '', { state: { SerieAId: 'SerieA', SerieAUId: parseInt('300' + i) } });
               }}
             >
-              <div className='epllist' key={data.id}>
+              <div className='epllist'>
                 <div className='home'>{data.home}</div>
                 <div className='game_time'>
                   <img src={data.homeimg} alt='img' />
@@ -37,7 +37,7 @@ export default function SerieA() {
                 <div className='away'>{data.away}</div>
               </div>
             </div>
-          </>
+          </div>
         ))}
       </div>
       <SerieALanking />

@@ -1,5 +1,5 @@
 .container {
-  background: rgba(241, 239, 236, 0.863);
+  background: var(--color-bg-white);
   box-shadow: 0 8px 32px 0 rgba(101, 104, 150, 0.37);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -14,7 +14,7 @@
   padding-right: 10px;
   cursor: pointer; /*이거 쓰면 커서 손모양으로 바뀜 굿 */
   text-shadow: 1px 1px 2px gray;
-  color: black;
+  color: var(--color-text);
   border: none;
   background: transparent;
   font-size: 40px;
@@ -35,7 +35,7 @@
 .simTitle {
   font-size: 25px;
   font-weight: 600;
-  color: rgb(32, 32, 31);
+  color: var(--color-text);
 }
 .title {
   background-color: rgba(179, 172, 172, 0.8);
@@ -51,7 +51,7 @@
   font-size: 25px;
   font-weight: 600;
   margin-top: 20px;
-  color: rgb(32, 32, 31);
+  color: var(--color-text);
 }
 .contents {
   background-color: rgba(179, 172, 172, 0.8);
