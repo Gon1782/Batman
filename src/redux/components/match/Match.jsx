@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './match.css';
-import ENG from '../../../assets/img/eng.png';
+import { FiChevronLeft } from "react-icons/fi";
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import axios from 'axios';
-// import Man_City from "../../../assets/img/Man_City.png";
-// import Liverpool from "../../../assets/img/Liverpool.png";
 
 const Match = () => {
   const { path } = useParams();
@@ -15,7 +13,7 @@ const Match = () => {
   let EPLUId = location.state.EPLUId;
   let LaligaUId = location.state.LaligaUId;
   let SerieAUId = location.state.SerieAUId;
-  let t = path.replace(/[^0-9]/g, '');
+  let t = path.replace(/\D/g, '');
 
   const LeagueId = (i) => {
     let leagueid;
@@ -41,7 +39,6 @@ const Match = () => {
     return leagueuid;
   };
 
-  // console.log(location.pathname);
   const navigate = useNavigate();
 
   const [matchdatas, setMatchdatas] = useState([]);
@@ -81,16 +78,16 @@ const Match = () => {
       <section className='match_header'>
         {/* 경기정보의 상단 부분 */}
         <button className='match_btn' onClick={() => navigate(-1)}>
-          &lt; 뒤로가기
+          <FiChevronLeft />
         </button>
         {/* 홈으로 돌아가는 버튼 */}
         <div className='league'>
-          <img alt='img' width='22' height='22' src={matchDatalogo} />
+          <img alt='img' width='30' height='30' src={matchDatalogo} />
           {matchData}
         </div>
 
         <div className='country'>
-          <img alt='img' width='22' height='22' src={matchDatanationlogo} />
+          <img alt='img' width='30' height='30' src={matchDatanationlogo} />
           <div>{matchDatanation}</div>
         </div>
       </section>
