@@ -1,5 +1,5 @@
 .container {
-  background: rgba(255, 255, 255, 0.863);
+  background: rgba(241, 239, 236, 0.863);
   box-shadow: 0 8px 32px 0 rgba(101, 104, 150, 0.37);
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -30,11 +30,12 @@
   align-items: center;
   justify-content: center;
   z-index: 999;
-  background: rgba(145, 138, 138, 0.8); /*배경색 넣는방법 */
+  background: rgba(53, 52, 52, 0.8); /*배경색 넣는방법 */
 }
 .simTitle {
   font-size: 25px;
   font-weight: 600;
+  color: rgb(32, 32, 31);
 }
 .title {
   background-color: rgba(179, 172, 172, 0.8);
@@ -50,6 +51,7 @@
   font-size: 25px;
   font-weight: 600;
   margin-top: 20px;
+  color: rgb(32, 32, 31);
 }
 .contents {
   background-color: rgba(179, 172, 172, 0.8);
@@ -81,9 +83,13 @@
   border-radius: 100px;
   margin-left: 270px;
   margin-top: 25px;
-  background-color: rgba(179, 172, 172, 0.8);
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(150, 146, 144);
+  color: white;
 }
 
 .simBtn:hover {
-  border: 3px solid black;
+  box-shadow: 0 0 30px 2px rgb(245, 121, 38);
+  background-color: rgb(243, 135, 73);
+  transition: all 0.5s ease-in-out;
 }
