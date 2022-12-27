@@ -3,8 +3,6 @@ import "./Community.css";
 import Modal from "../modal/Modal";
 import { useDispatch, useSelector } from "react-redux";
 import { useQuery, useQueryClient, useMutation } from "react-query";
-import { removeCommunity } from "../../redux/modules/community";
-import { modifiedCommunity, updateCommunity } from "../../redux/modules/community";
 import { changeCommunity, deleteCommunity, getCommunity } from "../../api/api";
 import { hideEdit, showEdit } from "../../redux/modules/communitySlice";
 
@@ -15,7 +13,6 @@ export default function Community() {
   const edit = useSelector((state) => state.communitySlice.edit);
 
   const [modal, setModal] = useState(false);
-  const [simmodal, setSimmodal] = useState(false);
   const [readOnly, setReadOnly] = useState(true);
   const [updateCommunityInput, setUpdateCommunityInput] = useState();
   const [updateContentsInput, setUpdateContentsInput] = useState();
@@ -62,19 +59,6 @@ export default function Community() {
     changeCommunityMutation.mutate(id);
   };
 
-  // const handleSucessButtonClick = (item) => {
-  //   dispatch(updateCommunity(item));
-  //   dispatch(modifiedCommunity(item.id));
-  //   setReadOnly(true);
-  // };
-
-  // const handleCancleButtonClick = (id) => {
-  //   dispatch(modifiedCommunity(id));
-  //   setReadOnly(true);
-  // };
-
-  // const community = useSelector((state) => state.community);
-
   const handleDeleteButtonClick = (id) => {
     if (window.confirm(CONFIRM_MESSAGE)) deleteCommunityMutation.mutate(id);
   };
@@ -105,11 +89,7 @@ export default function Community() {
         작성하기
       </button>
       {modal && <Modal setModal={setModal} />}
-      <div
-        onClick={() => {
-          setSimmodal(true);
-        }}
-      >
+      <div>
         {data.map((item) => (
           <div className="divCommunity" key={item.id}>
             <input readOnly={readOnly} defaultValue={item.title} onChange={onChangeCommunity} className="divTitle" />
@@ -127,7 +107,6 @@ export default function Community() {
           </div>
         ))}
       </div>
-      {/* {simmodal && <Simmodal setSimmodal={setSimmodal} />} */}
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import './Header.css';
 import { BsToggleOff, BsToggleOn } from 'react-icons/bs';
-import { useDarkMode } from '../../../pages/MainPage/context/DarkMode';
+import { useDarkMode } from '../../context/DarkMode';
 
 function Header() {
   const { darkMode, toggleDarkMode } = useDarkMode();

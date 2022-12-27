@@ -10,7 +10,7 @@
       "home": "Liverpool",
       "homeimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
       "homebet": 20200,
-      "drawbet": 21300,
+      "drawbet": 21200,
       "awaybet": 18700,
       "away": "Leicester",
       "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8197.png",
@@ -43,7 +43,7 @@
       "nation": "ENG",
       "home": "Tottenham",
       "homeimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png",
-      "away": "Aston",
+      "away": "Aston Villa",
       "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/10252.png",
       "time": "2023 01.01 23:00",
       "hour": "23:00",
@@ -116,7 +116,7 @@
     },
     {
       "id": 1203,
-      "name": "Tottenham",
+      "name": "Tottenham Hotspur",
       "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png",
       "num": "4"
     },
@@ -429,7 +429,7 @@
     {
       "id": 2,
       "homeAndAway": "Draw",
-      "betMoney": null
+      "betMoney": 0
     },
     {
       "id": 3,
