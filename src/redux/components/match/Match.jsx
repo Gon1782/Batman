@@ -98,14 +98,14 @@ const Match = () => {
         {/* 경기정보의 중단 부분 */}
         <div className='match_home'>
           <div>{matchDatahome}</div>
-          <img alt='img' src={matchDatahomeimg} />
+          <img alt='img' width='75' height='75' src={matchDatahomeimg} />
         </div>
         <div className='match_middle'>
           <div>{matchDatahour}</div>
           <div>vs</div>
         </div>
         <div className='match_away'>
-          <img alt='img' width='50' height='50' src={matchDataawayimg} />
+          <img alt='img' width='75' height='75' src={matchDataawayimg} />
           <div>{matchDataaway}</div>
         </div>
       </section>

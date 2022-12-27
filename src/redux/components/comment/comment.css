@@ -7,7 +7,8 @@
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background: white;
+  color: var(--color-text);
+  background: var(--color-bg-white);
   border-radius: 1rem;
 }
 .comment_container {
@@ -22,8 +23,8 @@
   padding-bottom: 1rem;
   width: 100%;
   height: 50px;
-  border-bottom: 1px solid black;
-  background: white;
+  border-bottom: 1px solid var(--color-text);
+  background: var(--color-bg-white);
   z-index: 999;
 }
 .writer_box {
@@ -38,7 +39,7 @@
 }
 .writer_input {
   height: 1.5rem;
-  border: 1px solid black;
+  border: 1px solid var(--color-text);
   border-radius: 1rem;
   padding-left: 10px;
   padding-right: 10px;
@@ -46,7 +47,7 @@
 }
 .password_input {
   height: 1.5rem;
-  border: 1px solid black;
+  border: 1px solid var(--color-text);
   border-radius: 1rem;
   padding-left: 10px;
   padding-right: 10px;
@@ -55,16 +56,18 @@
 .comment_input {
   width: 40vw;
   height: 2rem;
-  border: 1px solid black;
+  border: 1px solid var(--color-text);
   border-radius: 1rem;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 1rem;
 }
 .comment_btn {
+  color: black;
+  background-color: white;
   width: 9rem;
   height: 3.875rem;
-  border: 1px solid black;
+  border: 1px solid var(--color-text);
   border-radius: 1rem;
   cursor: pointer;
 }
@@ -81,7 +84,7 @@
   justify-content: space-around;
   width: 70%;
   height: 6rem;
-  border: 1px solid black;
+  border: 1px solid var(--color-text);
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
@@ -90,7 +93,7 @@
   height: 4rem;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--color-text);
 }
 .comment_textbox {
   display: flex;
@@ -131,7 +134,7 @@
 .comment_edit_input {
   width: 100%;
   height: 2rem;
-  border: 1px solid black;
+  border: 1px solid var(--color-text);
   border-radius: 1rem;
   padding-left: 10px;
   padding-right: 10px;
@@ -142,13 +145,13 @@
   width: 20%;
   height: 2.3rem;
   border-radius: 1rem;
-  border: 1px solid black;
-  background: white;
+  border: 1px solid var(--color-text);
+  background: var(--color-bg-white);
 }
 .comment_password_input {
   width: 60%;
   height: 2rem;
-  border: 1px solid black;
+  border: 1px solid var(--color-text);
   border-radius: 1rem;
   padding-left: 10px;
   padding-right: 10px;
@@ -161,7 +164,8 @@
   margin-right: 1rem;
 }
 .comment_like {
-  background: white;
+  color: var(--color-text);
+  background: var(--color-bg-white);
   border: none;
   border-radius: 1rem;
   cursor: pointer;
@@ -178,7 +182,7 @@
 }
 .onDisLikes {
   background-color: red;
-  color: white;
+  color: black;
   border: none;
   border-radius: 1rem;
 }
@@ -189,7 +193,8 @@
 }
 .btn_dropdown {
   cursor: pointer;
-  background: white;
+  color: var(--color-text);
+  background: var(--color-bg-white);
   border: none;
   font-size: 2rem;
 }
@@ -207,11 +212,12 @@
   height: 2.5rem;
   border-radius: 0.5rem;
   font-size: 1rem;
-  background: black;
-  border: none;
-  color: white;
+  background: var(--color-bg-white);
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
   z-index: 998;
 }
 .edit_btn:hover {
-  background: green;
+  color: var(--color-dark);
+  background: var(--color-bg-dark);
 }
