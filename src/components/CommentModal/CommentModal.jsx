@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./comment_modal.css";
 import { useDispatch, useSelector } from "react-redux";
-import { StBtn } from "../../../styles/styled-component";
-import { hideModal } from "../../modules/modalSlice";
+import { StBtn } from "../../styles/styled-component";
+import { hideModal } from "../../redux/modules/modalSlice";
 import { useMutation, useQuery, useQueryClient } from "react-query";
-import { deleteComment, getComments } from "../../../api/api";
-import { hideDropdown } from '../../modules/dropdownSlice';
-import { showEditBtn } from '../../modules/commentsSlice';
+import { deleteComment, getComments } from "../../api/api";
+import { hideDropdown } from '../../redux/modules/dropdownSlice';
+import { showEditBtn } from '../../redux/modules/commentsSlice';
 
 const CommentModal = () => {
   const queryClient = useQueryClient();

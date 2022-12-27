@@ -1,10 +1,10 @@
 import React from "react";
 import { useQueries, useQueryClient } from "react-query";
 import "./bet.css";
-import draw from "../../../assets/img/DRAW.png";
-import { changeBet, getBets, getEPL, getLaliga, getSerieA } from "../../../api/api";
+import draw from "../../assets/img/DRAW.png";
+import { changeBet, getBets, getEPL, getLaliga, getSerieA } from "../../api/api";
 import { useDispatch, useSelector } from "react-redux";
-import { betOff, betOn } from "../../modules/betSlice";
+import { betOff, betOn } from "../../redux/modules/betSlice";
 import { useParams } from "react-router-dom";
 
 const Bet = () => {
