@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useQueryClient, useMutation } from "react-query";
 import { useParams } from 'react-router-dom';
-import { postComment } from "../../../api/api";
+import { postComment } from "../../api/api";
 
 const Commentform = () => {
   const queryClient = useQueryClient();
