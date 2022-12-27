@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useQueryClient, useMutation } from "react-query"
 import { v4 as uuidv4 } from "uuid";
 import "./Modal.css";
-import { addCommunity } from "../../redux/modules/community";
+import { postCommunity } from '../../api/api';
 
 export default function Modal({ setModal }) {
-  console.log(setModal);
+  const queryClient = useQueryClient();
   const closeModal = () => {
     setModal(false);
   };
@@ -13,7 +13,11 @@ export default function Modal({ setModal }) {
   const [title, setTitle] = useState("");
   const [contents, setContents] = useState("");
 
-  const dispatch = useDispatch();
+  const communityMutation = useMutation(postCommunity, {
+    onSuccess: () => {
+      queryClient.invalidateQueries("community");
+    },
+  });
 
   const handleSubmitButtonClick = (event) => {
     event.preventDefault();
@@ -24,7 +28,7 @@ export default function Modal({ setModal }) {
       contents,
     };
 
-    dispatch(addCommunity(newCommunity));
+    communityMutation.mutate(newCommunity);
     closeModal();
   };
 
