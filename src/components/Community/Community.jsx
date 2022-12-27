@@ -36,13 +36,11 @@ export default function Community() {
 
   const onChangeCommunity = (event) => {
     const { value } = event.target;
-    console.log(value);
     setUpdateCommunityInput(value);
   };
 
   const onChangeCotents = (event) => {
     const { value } = event.target;
-    console.log(value);
     setUpdateContentsInput(value);
   };
 

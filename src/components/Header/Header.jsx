@@ -5,7 +5,6 @@ import { useDarkMode } from '../../context/DarkMode';
 
 function Header() {
   const { darkMode, toggleDarkMode } = useDarkMode();
-  console.log(darkMode);
   return (
     <div className='header'>
       <Link style={{ textDecoration: 'none', color: 'black' }} to='/'>
