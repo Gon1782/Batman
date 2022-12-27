@@ -321,10 +321,6 @@
       "password": "1234",
       "comment": "내가 누구게",
       "date": "2022.12.26 09:42",
-<<<<<<< HEAD
-      "likes": 8,
-      "dislikes": 8
-=======
       "likes": 5,
       "dislikes": 5
     },
@@ -357,7 +353,6 @@
       "date": "2022.12.27 04:04",
       "likes": 0,
       "dislikes": 0
->>>>>>> 15c2fb8af5ce83fd4f99be710821944525e89c78
     }
   ],
   "bets": [
@@ -384,30 +379,19 @@
       "contents": "맨시티 승"
     },
     {
-      "id": "58d843cc-9471-4663-a7d2-c0023980cc1c",
-      "title": "맨시티 vs 맨유 누가 진정한 맨체스터 주인인가",
-      "contents": "맨시티 승"
+      "id": "88f64ff9-e7f4-47e4-a851-97aa32a7110a",
+      "title": "아스널 이번 시즌 1등 가능한가요?",
+      "contents": "아뇨 절대 못해요 ㅎ"
     },
     {
-<<<<<<< HEAD
-      "id": "160c83eb-5f10-4d07-b672-e7db60001afd",
-      "title": "메시 vs 호날두 누가 더 월클인가요?",
-      "contents": "닥 메시요"
-=======
-      "id": "e749786b-6b3d-4f47-9d53-411f2049b1d0",
-      "title": "asehasehaswe",
-      "contents": "hasehaesh"
+      "id": "29708625-108e-40ea-a071-0adfb2d23765",
+      "title": "득점왕 누가 할거 같나요?",
+      "contents": "당연히 홀란드죠 ㅎ"
     },
     {
-      "id": "4575d8b3-1d71-4c82-a4c1-cdcafd839778",
-      "title": "asefsaefasgaseg",
-      "contents": "asefasefasgaseg"
-    },
-    {
-      "id": "cc269c16-14da-47ec-b4b5-4954b4601a55",
-      "title": "asge",
-      "contents": "gasegasegsaegasfsaef"
->>>>>>> 15c2fb8af5ce83fd4f99be710821944525e89c78
+      "id": "10b6762d-4b6e-4d5f-8409-82e551eebbfe",
+      "title": "차범근 vs 박지성 vs 손흥민 누가더 대단한가요?",
+      "contents": "한상권이 더 대단해요 ㅎ"
     }
   ]
 }
