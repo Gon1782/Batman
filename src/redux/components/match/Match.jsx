@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
-import "./match.css";
-import ENG from "../../../assets/img/eng.png";
-import { useNavigate, useParams, useLocation } from "react-router-dom";
-import axios from "axios";
-// import Man_City from "../../../assets/img/Man_City.png";
-// import Liverpool from "../../../assets/img/Liverpool.png";
+import React, { useState, useEffect } from 'react';
+import './match.css';
+import { FiChevronLeft } from "react-icons/fi";
+import { useNavigate, useParams, useLocation } from 'react-router-dom';
+import axios from 'axios';
 
 const Match = () => {
   const { path } = useParams();
@@ -15,15 +13,15 @@ const Match = () => {
   let EPLUId = location.state.EPLUId;
   let LaligaUId = location.state.LaligaUId;
   let SerieAUId = location.state.SerieAUId;
-  let t = path.replace(/[^0-9]/g, "");
+  let t = path.replace(/\D/g, '');
 
   const LeagueId = (i) => {
     let leagueid;
-    if (path === "EPL" + i + "") {
+    if (path === 'EPL' + i + '') {
       leagueid = EPLId;
-    } else if (path === "Laliga" + i + "") {
+    } else if (path === 'Laliga' + i + '') {
       leagueid = LaligaId;
-    } else if (path === "SerieA" + i + "") {
+    } else if (path === 'SerieA' + i + '') {
       leagueid = SerieAId;
     }
     return leagueid;
@@ -31,17 +29,16 @@ const Match = () => {
 
   const LeagueUId = (i) => {
     let leagueuid;
-    if (path === "EPL" + i + "") {
+    if (path === 'EPL' + i + '') {
       leagueuid = EPLUId;
-    } else if (path === "Laliga" + i + "") {
+    } else if (path === 'Laliga' + i + '') {
       leagueuid = LaligaUId;
-    } else if (path === "SerieA" + i + "") {
+    } else if (path === 'SerieA' + i + '') {
       leagueuid = SerieAUId;
     }
     return leagueuid;
   };
 
-  // console.log(location.pathname);
   const navigate = useNavigate();
 
   const [matchdatas, setMatchdatas] = useState([]);
@@ -60,7 +57,7 @@ const Match = () => {
   console.log(matchData);
   useEffect(() => {
     axios
-      .get("http://localhost:3001/" + LeagueId(t) + "")
+      .get('http://localhost:3001/' + LeagueId(t) + '')
       .then((res) => setMatchdatas(res.data))
       .catch((error) => {
         if (error.response) {
@@ -70,46 +67,46 @@ const Match = () => {
         } else if (error.request) {
           console.log(error.request);
         } else {
-          console.log("Error", error.message);
+          console.log('Error', error.message);
         }
         console.log(error.config);
       });
   }, []);
 
   return (
-    <div className="match_info">
-      <section className="match_header">
+    <div className='match_info'>
+      <section className='match_header'>
         {/* 경기정보의 상단 부분 */}
-        <button className="match_btn" onClick={() => navigate(-1)}>
-          &lt; 뒤로가기
+        <button className='match_btn' onClick={() => navigate(-1)}>
+          <FiChevronLeft />
         </button>
         {/* 홈으로 돌아가는 버튼 */}
-        <div className="league">
-          <img alt="img" width="22" height="22" src={matchDatalogo} />
+        <div className='league'>
+          <img alt='img' width='30' height='30' src={matchDatalogo} />
           {matchData}
         </div>
 
-        <div className="country">
-          <img alt="img" width="22" height="22" src={matchDatanationlogo} />
+        <div className='country'>
+          <img alt='img' width='30' height='30' src={matchDatanationlogo} />
           <div>{matchDatanation}</div>
         </div>
       </section>
-      <section className="match_body">
+      <section className='match_body'>
         {/* 경기정보의 중단 부분 */}
-        <div className="home">
+        <div className='match_home'>
           <div>{matchDatahome}</div>
-          <img alt="img" src={matchDatahomeimg} />
+          <img alt='img' width='75' height='75' src={matchDatahomeimg} />
         </div>
-        <div className="match_middle">
+        <div className='match_middle'>
           <div>{matchDatahour}</div>
           <div>vs</div>
         </div>
-        <div className="away">
-          <img alt="img" width="50" height="50" src={matchDataawayimg} />
+        <div className='match_away'>
+          <img alt='img' width='75' height='75' src={matchDataawayimg} />
           <div>{matchDataaway}</div>
         </div>
       </section>
-      <section className="match_footer">
+      <section className='match_footer'>
         {/* 경기정보의 하단부분 */}
         <div>{matchDatatime}</div>
         {/* 경기 시작시간 */}

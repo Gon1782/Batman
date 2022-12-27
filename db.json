@@ -5,7 +5,7 @@
       "title": "Premier League",
       "league": "Premier League",
       "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/47.png",
-      "nationlogo": "https://previews.123rf.com/images/paylessimages/paylessimages1501/paylessimages150165830/49686250-%EC%9E%89%EA%B8%80%EB%9E%9C%EB%93%9C-%EA%B5%AD%EA%B8%B0.jpg",
+      "nationlogo": "https://images.fotmob.com/image_resources/logo/teamlogo/eng.png",
       "nation": "ENG",
       "home": "Liverpool",
       "homeimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8650.png",
@@ -22,11 +22,11 @@
       "id": 1001,
       "league": "Premier League",
       "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/47.png",
-      "nationlogo": "https://previews.123rf.com/images/paylessimages/paylessimages1501/paylessimages150165830/49686250-%EC%9E%89%EA%B8%80%EB%9E%9C%EB%93%9C-%EA%B5%AD%EA%B8%B0.jpg",
+      "nationlogo": "https://images.fotmob.com/image_resources/logo/teamlogo/eng.png",
       "nation": "ENG",
       "home": "Brighten",
       "homeimg": "https://images.fotmob.com/image_resources/logo/teamlogo/10204.png",
-      "away": "Arsnel",
+      "away": "Arsenal",
       "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
       "time": "2023 01.01 12:00",
       "hour": "12:00",
@@ -39,7 +39,7 @@
       "id": 1002,
       "league": "Premier League",
       "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/47.png",
-      "nationlogo": "https://previews.123rf.com/images/paylessimages/paylessimages1501/paylessimages150165830/49686250-%EC%9E%89%EA%B8%80%EB%9E%9C%EB%93%9C-%EA%B5%AD%EA%B8%B0.jpg",
+      "nationlogo": "https://images.fotmob.com/image_resources/logo/teamlogo/eng.png",
       "nation": "ENG",
       "home": "Tottenham",
       "homeimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png",
@@ -47,7 +47,10 @@
       "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/10252.png",
       "time": "2023 01.01 23:00",
       "hour": "23:00",
-      "homeplace": "Tottenham Hotspur Stadium"
+      "homeplace": "Tottenham Hotspur Stadium",
+      "drawbet": 400,
+      "homebet": 700,
+      "awaybet": 700
     }
   ],
   "EPL_LanKing_title": [
@@ -61,28 +64,33 @@
   "EPL_Lanking": [
     {
       "id": 1200,
-      "name": "Arsnel",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png"
+      "name": "Arsenal",
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9825.png",
+      "num": "1"
     },
     {
       "id": 1201,
       "name": "Manchester City",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8456.png",
+      "num": "2"
     },
     {
       "id": 1202,
       "name": "Newcastle United",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/10261.png",
+      "num": "3"
     },
     {
       "id": 1203,
       "name": "Tottenham",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8586.png",
+      "num": "4"
     },
     {
       "id": 1204,
       "name": "Manchester United",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/10260.png",
+      "num": "5"
     }
   ],
   "Laliga": [
@@ -90,44 +98,53 @@
       "id": 2000,
       "title": "Laliga",
       "league": "Laliga",
-      "logo": "https://w.namu.la/s/f76ba4e6ebbab718d9e56319b7e87b7039db9e93c38c4e774ee060bd67f231666610a4ca42d62f470a137842319fe01ab9d3dab541704c4ab6a0f3cc52530b652c48e037a2616b6edf7ad1027d9019407634a359e25661ffb9f6aa821a5ffeaf",
-      "nationlogo": "https://media.istockphoto.com/id/886045508/ko/%EB%B2%A1%ED%84%B0/%EC%8A%A4%ED%8E%98%EC%9D%B8%EC%9D%98-%EB%B2%84%ED%8A%BC-%EA%B5%AD%EA%B8%B0%EB%A5%BC-%EB%82%98%ED%83%80%EB%82%B4%EB%8A%94-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B8%B0%EA%B4%80-%EC%9E%90%EB%A3%8C-%EB%B0%8F-%EC%A7%80%EB%A6%AC%EC%9D%98-%EC%B9%B4%ED%83%88%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9D%B4%EC%83%81%EC%A0%81.jpg?s=612x612&w=0&k=20&c=xrIgUlonxuyS7X4basPneYB7_p4ba1B5iqPj_u92Xhs=",
-      "nation": "SPA",
+      "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/87.png",
+      "nationlogo": "https://images.fotmob.com/image_resources/logo/teamlogo/6720.png",
+      "nation": "ESP",
       "home": "Barcelona",
       "homeimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png",
       "away": "Espanyol",
       "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8558.png",
       "time": "2022 12.31 22:00",
       "hour": "22:00",
-      "homeplace": "Camp Nou"
+      "homeplace": "Camp Nou",
+      "drawbet": 400,
+      "homebet": 700,
+      "awaybet": 700
     },
     {
       "id": 2001,
       "league": "Laliga",
       "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/dark/87.png",
-      "nationlogo": "https://media.istockphoto.com/id/886045508/ko/%EB%B2%A1%ED%84%B0/%EC%8A%A4%ED%8E%98%EC%9D%B8%EC%9D%98-%EB%B2%84%ED%8A%BC-%EA%B5%AD%EA%B8%B0%EB%A5%BC-%EB%82%98%ED%83%80%EB%82%B4%EB%8A%94-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B8%B0%EA%B4%80-%EC%9E%90%EB%A3%8C-%EB%B0%8F-%EC%A7%80%EB%A6%AC%EC%9D%98-%EC%B9%B4%ED%83%88%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9D%B4%EC%83%81%EC%A0%81.jpg?s=612x612&w=0&k=20&c=xrIgUlonxuyS7X4basPneYB7_p4ba1B5iqPj_u92Xhs=",
-      "nation": "SPA",
+      "nationlogo": "https://images.fotmob.com/image_resources/logo/teamlogo/6720.png",
+      "nation": "ESP",
       "home": "Valencia",
       "homeimg": "https://images.fotmob.com/image_resources/logo/teamlogo/10267.png",
-      "away": "카디스",
+      "away": "Cadiz",
       "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8385.png",
       "time": "2023 01.07 05:00",
       "hour": "05:00",
-      "homeplace": "Mestalla"
+      "homeplace": "Mestalla",
+      "drawbet": 400,
+      "homebet": 700,
+      "awaybet": 700
     },
     {
       "id": 2002,
       "league": "Laliga",
       "logo": "https://images.fotmob.com/image_resources/logo/leaguelogo/dark/87.png",
-      "nationlogo": "https://media.istockphoto.com/id/886045508/ko/%EB%B2%A1%ED%84%B0/%EC%8A%A4%ED%8E%98%EC%9D%B8%EC%9D%98-%EB%B2%84%ED%8A%BC-%EA%B5%AD%EA%B8%B0%EB%A5%BC-%EB%82%98%ED%83%80%EB%82%B4%EB%8A%94-%EC%95%84%EC%9D%B4%EC%BD%98%EC%9E%85%EB%8B%88%EB%8B%A4-%EA%B8%B0%EA%B4%80-%EC%9E%90%EB%A3%8C-%EB%B0%8F-%EC%A7%80%EB%A6%AC%EC%9D%98-%EC%B9%B4%ED%83%88%EB%A1%9C%EA%B7%B8%EC%97%90-%EC%9D%B4%EC%83%81%EC%A0%81.jpg?s=612x612&w=0&k=20&c=xrIgUlonxuyS7X4basPneYB7_p4ba1B5iqPj_u92Xhs=",
-      "nation": "SPA",
+      "nationlogo": "https://images.fotmob.com/image_resources/logo/teamlogo/6720.png",
+      "nation": "ESP",
       "home": "Atletico Madrid",
       "homeimg": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
       "away": "Osasuna",
       "awayimg": "https://images.fotmob.com/image_resources/logo/teamlogo/8371.png",
       "time": "2023 01.10 05:00",
       "hour": "05:00",
-      "homeplace": "San Mames Stadium"
+      "homeplace": "San Mames Stadium",
+      "drawbet": 400,
+      "homebet": 700,
+      "awaybet": 700
     }
   ],
   "Laliga_LanKing_title": [
@@ -142,27 +159,32 @@
     {
       "id": 2200,
       "name": "Barcelona",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8634.png",
+      "num": "1"
     },
     {
       "id": 2201,
       "name": "Real Madrid",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8633.png",
+      "num": "2"
     },
     {
       "id": 2202,
       "name": "Real Sociedad",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8560.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8560.png",
+      "num": "3"
     },
     {
       "id": 2203,
       "name": "Athletic Club",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8315.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8315.png",
+      "num": "4"
     },
     {
       "id": 2204,
       "name": "Atletico Madrid",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9906.png",
+      "num": "5"
     }
   ],
   "SerieA": [
@@ -180,7 +202,9 @@
       "time": "2023 01.04 22:30",
       "hour": "22:30",
       "homeplace": "Stadio Olimpico Grande Torino",
-      "drawbet": null
+      "drawbet": 400,
+      "homebet": 700,
+      "awaybet": 700
     },
     {
       "id": 3001,
@@ -195,7 +219,9 @@
       "time": "2023 01.05 04:45",
       "hour": "04:45",
       "homeplace": "Giuseppe Meazza",
-      "drawbet": null
+      "drawbet": 400,
+      "homebet": 700,
+      "awaybet": 700
     }
   ],
   "SerieA_LanKing_title": [
@@ -210,27 +236,32 @@
     {
       "id": 3200,
       "name": "Napoli",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9875.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9875.png",
+      "num": "1"
     },
     {
       "id": 3201,
       "name": "AC Milan",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8564.png",
+      "num": "2"
     },
     {
       "id": 3202,
       "name": "Juventus",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/9885.png",
+      "num": "3"
     },
     {
       "id": 3203,
       "name": "Lazio",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8543.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8543.png",
+      "num": "4"
     },
     {
       "id": 3204,
       "name": "Inter",
-      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png"
+      "img": "https://images.fotmob.com/image_resources/logo/teamlogo/8636.png",
+      "num": "5"
     }
   ],
   "comments": [
@@ -331,8 +362,8 @@
       "password": "efasefasef",
       "comment": "asefasef",
       "date": "2022.12.27 04:02",
-      "likes": 0,
-      "dislikes": 0
+      "likes": 1,
+      "dislikes": 1
     },
     {
       "id": 13,

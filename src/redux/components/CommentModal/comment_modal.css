@@ -15,7 +15,8 @@
 .modal_box {
     width: 500px;
     height: 250px;
-    background-color: white;
+    color: var(--color-text);
+    background-color: var(--color-bg-white);
     display: flex;
     flex-direction: column;
     align-items: center;
