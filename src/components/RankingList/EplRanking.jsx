@@ -6,12 +6,12 @@ import './AllRanking.css';
 export default function EplRanking() {
   const [rankTitle, setRankTitle] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:3001/Epl_RanKing_title').then((res) => setRankTitle(res.data));
+    axios.get('https://available-dented-arrhinceratops.glitch.me/Epl_RanKing_title').then((res) => setRankTitle(res.data));
   }, []);
 
   const [rank, setRank] = useState([]);
   useEffect(() => {
-    axios.get('http://localhost:3001/Epl_Ranking').then((res) => setRank(res.data));
+    axios.get('https://available-dented-arrhinceratops.glitch.me/Epl_Ranking').then((res) => setRank(res.data));
   }, []);
 
   return (

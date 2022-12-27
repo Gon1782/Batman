@@ -35,14 +35,20 @@
   margin-left: 10px;
 }
 
-/* .wrap {
+.wrap {
   position: relative;
-} */
+}
+
+.community_btn_box {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  margin-top: 30px;
+}
 
 .community-Btn {
   position: relative;
-  left: 1700px;
-  top: 30px;
   width: 100px;
   height: 50px;
   font-weight: 600;
